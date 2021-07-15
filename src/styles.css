@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--roboto);
+  background-color: var(--pri);
+  color: var(--tet1);
+}
+
+:root {
+  --pri: #181d27;
+  --sec: #fed253;
+  --sec-tint: #fed3532f;
+  --tet1: #cecece;
+  --tet2: #fbfbfb;
+
+  --aladin: "Aladin", cursive;
+  --roboto: "Roboto", sans-serif;
+}
+
+.dark {
+  --pri: #fbfbfb;
+  --sec: #ffbd00;
+  --sec-tint: #ffbd00;
+  --tet1: #cecece;
+  --tet2: #fbfbfb;
+}
+
+/* .dark {
+  --pri: green;
+  --sec: rgb(0, 255, 0);
+} */
