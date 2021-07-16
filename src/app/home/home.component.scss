@@ -30,6 +30,7 @@
 
         &:hover {
           font-weight: 600;
+          color: var(--sup-text);
         }
       }
     }
@@ -59,13 +60,13 @@
         }
         h1 {
           font-size: 4.5rem;
-          color: var(--tet2);
+          color: var(--sup-text);
           width: 20rem;
         }
         h2 {
           font-size: 3rem;
           margin-top: 1.125rem;
-          white-space: nowrap;
+          // white-space: nowrap;
           margin-bottom: 2.875rem;
         }
         button {
@@ -90,26 +91,8 @@
       }
     }
 
-    .title {
-      display: flex;
-      justify-content: right;
-      width: 100%;
-      align-items: center;
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-      span {
-        color: var(--sec);
-        margin: 0 10px 0 5px;
-      }
-      &::before {
-        content: "";
-        height: 1px;
-        width: 15rem;
-
-        background-color: var(--tet2);
-      }
-    }
     .about-me {
+      margin-bottom: 130px;
       display: flex;
       justify-content: center;
       .text {
@@ -145,8 +128,8 @@
       }
       .image {
         margin-left: 20px;
-        height: 400px;
-        width: 400px;
+        height: 380px;
+        width: 350px;
         &::after {
           content: "";
           display: flex;
@@ -166,6 +149,31 @@
           object-fit: cover;
         }
       }
+    }
+  }
+
+  .title {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 70px;
+    color: var(--sup-text);
+    span {
+      color: var(--sec);
+      margin: 0 10px 0 5px;
+      font-weight: 600;
+    }
+    &::before {
+      content: "";
+      height: 1px;
+      width: 15rem;
+      background-color: var(--sup-text);
+    }
+    &:nth-child(4) {
+      flex-direction: row-reverse;
+      justify-content: left;
     }
   }
 }
