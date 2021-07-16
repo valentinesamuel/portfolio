@@ -1,5 +1,26 @@
 @import "../../styles.css";
 
+.title {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 70px;
+  color: var(--sup-text);
+  span {
+    color: var(--sec);
+    margin: 0 10px 0 5px;
+    font-weight: 600;
+  }
+  &::before {
+    content: "";
+    height: 1px;
+    width: 15rem;
+    background-color: var(--sup-text);
+  }
+}
+
 .layout {
   display: flex;
   width: 100%;
@@ -68,6 +89,7 @@
           margin-top: 1.125rem;
           // white-space: nowrap;
           margin-bottom: 2.875rem;
+          color: var(--prof-text);
         }
         button {
           padding: 0.6875rem 1.6875rem;
@@ -150,30 +172,14 @@
         }
       }
     }
-  }
 
-  .title {
-    display: flex;
-    justify-content: right;
-    width: 100%;
-    align-items: center;
-    font-size: 1.5rem;
-    margin-bottom: 70px;
-    color: var(--sup-text);
-    span {
-      color: var(--sec);
-      margin: 0 10px 0 5px;
-      font-weight: 600;
-    }
-    &::before {
-      content: "";
-      height: 1px;
-      width: 15rem;
-      background-color: var(--sup-text);
-    }
-    &:nth-child(4) {
-      flex-direction: row-reverse;
+    .exp-title {
+      @extend .title;
       justify-content: left;
+      flex-direction: row-reverse;
+      &::before {
+        margin-left: 5px;
+      }
     }
   }
 }

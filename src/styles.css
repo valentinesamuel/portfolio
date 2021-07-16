@@ -18,6 +18,7 @@
   --text: #cecece;
   --em-text: #fed253;
   --sup-text: #ffffff;
+  --prof-text:#CECECE;
 
   --aladin: "Aladin", cursive;
   --roboto: "Roboto", sans-serif;
@@ -27,10 +28,11 @@
   --pri: #fbfbfb;
   --sec: #ffbd00;
   --sec-tint: #ffbd00;
-
+  
+  --prof-text:#A2A2A2;
   --text: #181d27;
   --em-text: #fed253;
-  --sup-text: #ffffff;
+  --sup-text: #181D27;
 }
 
 /* .dark {
