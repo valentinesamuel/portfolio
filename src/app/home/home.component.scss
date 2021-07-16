@@ -137,6 +137,7 @@
               margin-bottom: 10px;
               &::before {
                 content: "▹";
+                color: var(--sec);
               }
             }
           }
@@ -146,22 +147,23 @@
         margin-left: 20px;
         height: 400px;
         width: 400px;
-        position: relative;
         &::after {
           content: "";
-          top: 0px;
-          left: 0px;
-          height: 100%;
+          display: flex;
+          position: relative;
+          bottom: 50%;
+          left: 5%;
+          bottom: 96%;
           width: 100%;
-          border: 1px solid white;
-          z-index: -1;
+          height: 100%;
+          border: 4px solid var(--sec);
+          border-radius: 6px;
         }
         img {
-          border-radius: 10px;
+          border-radius: 6px;
           height: 100%;
           width: 100%;
           object-fit: cover;
-          background-color: red;
         }
       }
     }
