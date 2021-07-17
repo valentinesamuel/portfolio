@@ -70,7 +70,137 @@
     </section>
 
     <!--   Job Experience Section   -->
-    <p class="exp-title">Job Experience<span>02.</span> </p>
-    <section class="experience"></section>
+    <p class="exp-title">Job Experience<span>02.</span></p>
+    <section class="experience">
+      <ul>
+        <li
+          class="list"
+          (click)="selectCompany('mission')"
+          [ngClass]="company == 'mission' ? 'activeTile' : ''"
+        >
+          Kingwill Int. Services
+        </li>
+        <li
+          class="list"
+          (click)="selectCompany('vision')"
+          [ngClass]="company == 'vision' ? 'activeTile' : ''"
+        >
+          Vision
+        </li>
+        <li
+          class="list"
+          (click)="selectCompany('values')"
+          [ngClass]="company == 'values' ? 'activeTile' : ''"
+        >
+          Values
+        </li>
+        <li
+          class="list"
+          (click)="selectCompany('info')"
+          [ngClass]="company == 'info' ? 'activeTile' : ''"
+        >
+          info
+        </li>
+      </ul>
+
+      <div class="content">
+        <div class="value" *ngIf="company == 'mission'">
+          <h2>
+            <span class="colored-text">Freelance</span> Frontend Engineer
+            <span class="firm">Kingswill Int. Services</span>
+          </h2>
+          <p class="duration">March 2020 - Present</p>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              minima iure nisi, possimus cum corporis dolores sed, porro illum
+              debitis at.
+            </li>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              minima iure nisi, possimus cum corporis dolores sed, porro illum
+              debitis at.
+            </li>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              minima iure nisi, possimus cum corporis dolores sed, porro illum
+              debitis at.
+            </li>
+          </ul>
+        </div>
+        <div class="value" *ngIf="company == 'vision'">
+          <h2>
+            <span class="colored-text">Freelance</span> Frontend Engineer
+            <span class="firm">Kingswill Int. Services</span>
+          </h2>
+          <p class="duration">March 2020 - Present</p>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              minima iure nisi, possimus cum corporis dolores sed, porro illum
+              debitis at.
+            </li>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              minima iure nisi, possimus cum corporis dolores sed, porro illum
+              debitis at.
+            </li>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              minima iure nisi, possimus cum corporis dolores sed, porro illum
+              debitis at.
+            </li>
+          </ul>
+        </div>
+        <div class="value" *ngIf="company == 'values'">
+          <h2>
+            <span class="colored-text">Freelance</span> Frontend Engineer
+            <span class="firm">Kingswill Int. Services</span>
+          </h2>
+          <p class="duration">March 2020 - Present</p>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              minima iure nisi, possimus cum corporis dolores sed, porro illum
+              debitis at.
+            </li>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              minima iure nisi, possimus cum corporis dolores sed, porro illum
+              debitis at.
+            </li>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              minima iure nisi, possimus cum corporis dolores sed, porro illum
+              debitis at.
+            </li>
+          </ul>
+        </div>
+        <div class="value" *ngIf="company == 'info'">
+          <h2>
+            <span class="colored-text">Freelance</span> Frontend Engineer
+            <span class="firm">Kingswill Int. Services</span>
+          </h2>
+          <p class="duration">March 2020 - Present</p>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              minima iure nisi, possimus cum corporis dolores sed, porro illum
+              debitis at.
+            </li>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              minima iure nisi, possimus cum corporis dolores sed, porro illum
+              debitis at.
+            </li>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              minima iure nisi, possimus cum corporis dolores sed, porro illum
+              debitis at.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </section>
 </div>

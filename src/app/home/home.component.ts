@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   darkTheme = false;
+  company: any = 'mission';
+  selected
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  selectCompany(id: any) {
+    this.company = id;
+    this.selected = !this.selected;
+
+  }
+
 
 }

@@ -2,7 +2,7 @@
 
 .title {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   width: 100%;
   align-items: center;
   font-size: 1.5rem;
@@ -65,7 +65,7 @@
     position: fixed;
   }
   .body {
-    margin: 0 235px 0 208px;
+    margin: 0 370px 0 370px;
     width: 100%;
 
     .intro {
@@ -114,12 +114,12 @@
     }
 
     .about-me {
+      width: 100%;
       margin-bottom: 130px;
       display: flex;
-      justify-content: center;
       .text {
         max-width: 500px;
-        line-height: 2rem;
+        line-height: 32px;
 
         .p1,
         .p2 {
@@ -175,10 +175,76 @@
 
     .exp-title {
       @extend .title;
-      justify-content: left;
       flex-direction: row-reverse;
+      margin-bottom: 3.5rem;
       &::before {
         margin-left: 5px;
+      }
+    }
+    .experience {
+      display: flex;
+      margin-bottom: 100px;
+      width: 100%;
+      // justify-content: center;
+      ul {
+        max-width: max-content;
+        padding: 0;
+        list-style-type: none;
+        margin-right: 20px;
+
+        li {
+          display: flex;
+          max-width: 100%;
+          justify-content: left;
+          align-items: center;
+          padding: 20px;
+          border-left: 2px solid var(--sup-text);
+          font-size: 16px;
+        }
+
+        .activeTile {
+          border-left: 2px solid var(--sec);
+          background-color: var(--experience-higlight);
+          color: var(--sec);
+        }
+      }
+
+      .content {
+        min-height: 100%;
+        .value {
+          max-width: 700px;
+
+          h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 5px;
+            .colored-text {
+              color: var(--sec);
+            }
+            .firm {
+              color: var(--sec);
+              &::before {
+                content: "@ ";
+              }
+            }
+          }
+
+          ul {
+            margin-top: 20px;
+            li {
+              border: none;
+              padding: 0;
+              line-height: 27px;
+              display: flex;
+              align-items: baseline;
+              margin-bottom: 18px;
+              &::before{
+                content: "▹";
+                color: var(--sec);
+              }
+            }
+          }
+        }
       }
     }
   }

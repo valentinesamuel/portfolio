@@ -18,7 +18,8 @@
   --text: #cecece;
   --em-text: #fed253;
   --sup-text: #ffffff;
-  --prof-text:#CECECE;
+  --prof-text: #cecece;
+  --experience-higlight: #091225;
 
   --aladin: "Aladin", cursive;
   --roboto: "Roboto", sans-serif;
@@ -27,12 +28,13 @@
 .dark {
   --pri: #fbfbfb;
   --sec: #ffbd00;
-  --sec-tint: #ffbd00;
-  
-  --prof-text:#A2A2A2;
+  --sec-tint: #ffbb001c;
+  --experience-higlight: #091225;
+
+  --prof-text: #a2a2a2;
   --text: #181d27;
   --em-text: #fed253;
-  --sup-text: #181D27;
+  --sup-text: #181d27;
 }
 
 /* .dark {
