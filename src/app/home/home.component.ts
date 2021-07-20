@@ -8,9 +8,8 @@ import { FormControl, FormControlDirective, FormGroup, Validators } from '@angul
 })
 export class HomeComponent implements OnInit {
   contactForm: FormGroup;
-  darkTheme = false;
+  darkTheme = true;
 
-  seeOthers = true;
   company: any = 'freelance';
   selected
 
@@ -30,9 +29,6 @@ export class HomeComponent implements OnInit {
     this.selected = !this.selected;
   }
 
-  seeOtherProjects() {
-    this.seeOthers = !this.seeOthers;
-  }
 
   onSubmit(form) {
     

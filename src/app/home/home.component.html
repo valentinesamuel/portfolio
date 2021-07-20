@@ -1,10 +1,19 @@
 <div class="layout" [ngClass]="!darkTheme ? 'dark' : ''">
   <nav>
     <ul>
-      <li><span>01.</span>About Me</li>
-      <li><span>02.</span>Job Experience</li>
-      <li><span>03.</span>Projects</li>
-      <li><span>04.</span>Contact Me</li>
+      <li>
+        <a href="/#about"><span>01.</span>About Me</a>
+      </li>
+      <li>
+        <a href="/#experience"><span>02.</span>Job Experience</a>
+      </li>
+      <li>
+        <a href="#projects"><span>03.</span>Projects</a>
+      </li>
+      <li>
+        <a href="#contact"><span>04.</span>Contact Me</a>
+      </li>
+      <li><span class="resume">Resume</span></li>
     </ul>
   </nav>
 
@@ -18,6 +27,9 @@
 
   <section class="body">
     <h1 class="logo">&lt;VS/&gt;</h1>
+    <app-theme-checker
+      (changeTheme)="darkTheme = !darkTheme"
+    ></app-theme-checker>
     <!--   Intro section     -->
     <section class="intro">
       <div class="name">
@@ -37,7 +49,7 @@
     </section>
 
     <!-- About me section -->
-    <section class="about-me">
+    <section class="about-me" id="about">
       <p class="title"><span>01.</span> About Me</p>
       <div class="inner">
         <section class="text">
@@ -80,7 +92,7 @@
     </section>
 
     <!--   Job Experience Section   -->
-    <section class="experience">
+    <section class="experience" id="experience">
       <p class="exp-title">Job Experience<span>02.</span></p>
       <div class="inner">
         <ul>
@@ -175,102 +187,10 @@
     </section>
 
     <!--   Job Experience Section   -->
-    <p class="title"><span>03.</span>Projects</p>
-    <section class="project-container">
-      <div class="p1">
-        <div class="info">
-          <p class="sn">01</p>
-          <div class="details">
-            <h3>Project Name</h3>
-            <span class="stack">
-              <p>Node js</p>
-              <p>Api</p>
-              <p>Javascript</p>
-            </span>
-            <p class="src">&lt;src/&gt;</p>
-          </div>
-          <button>View Project</button>
-        </div>
-      </div>
-      <div class="p1">
-        <div class="info">
-          <p class="sn">01</p>
-          <div class="details">
-            <h3>Project Name</h3>
-            <span class="stack">
-              <p>Node js</p>
-              <p>Api</p>
-              <p>Javascript</p>
-            </span>
-            <p class="src">&lt;src/&gt;</p>
-          </div>
-          <button>View Project</button>
-        </div>
-      </div>
-      <div class="p1">
-        <div class="info">
-          <p class="sn">01</p>
-          <div class="details">
-            <h3>Project Name</h3>
-            <span class="stack">
-              <p>Node js</p>
-              <p>Api</p>
-              <p>Javascript</p>
-            </span>
-            <p class="src">&lt;src/&gt;</p>
-          </div>
-          <button>View Project</button>
-        </div>
-      </div>
-      <div class="p1">
-        <div class="info">
-          <p class="sn">01</p>
-          <div class="details">
-            <h3>Project Name</h3>
-            <span class="stack">
-              <p>Node js</p>
-              <p>Api</p>
-              <p>Javascript</p>
-            </span>
-            <p class="src">&lt;src/&gt;</p>
-          </div>
-          <button>View Project</button>
-        </div>
-      </div>
-      <div class="see-others">
-        <button class="seeArchive" (click)="seeOtherProjects()">
-          {{ seeOthers ? "Hide" : "See" }} Other Projects
-        </button>
-      </div>
-      <div class="other-projects" *ngIf="seeOthers">
-        <h2>Other Projects</h2>
-        <p class="pre">
-          These are other projects that i create to constantly improve my
-          skills. The source codes are available on my github repositories
-        </p>
-        <ul class="other-list">
-          <li>
-            /01 <span class="src">&lt;src/&gt;</span>
-            <span class="name">one king project like that nai go dey here</span>
-          </li>
-          <li>
-            /01 <span class="src">&lt;src/&gt;</span>
-            <span class="name">one king project like that nai go dey here</span>
-          </li>
-          <li>
-            /01 <span class="src">&lt;src/&gt;</span>
-            <span class="name">one king project like that nai go dey here</span>
-          </li>
-          <li>
-            /01 <span class="src">&lt;src/&gt;</span>
-            <span class="name">one king project like that nai go dey here</span>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <app-projects id="projects"></app-projects>
 
     <!--  Contact Me Section   -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <p class="exp-title">Contact Me<span>04.</span></p>
       <p class="pre">&lt;So what's next?/&gt;</p>
       <h2>Let's Connect</h2>
