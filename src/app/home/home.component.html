@@ -230,7 +230,9 @@
         </div>
       </div>
       <div class="see-others">
-        <button (click)="seeOtherProjects()">{{seeOthers ? 'Hide' : 'See'}} Other Projects</button>
+        <button (click)="seeOtherProjects()">
+          {{ seeOthers ? "Hide" : "See" }} Other Projects
+        </button>
       </div>
       <div class="other-projects" *ngIf="seeOthers">
         <h2>Other Projects</h2>
@@ -256,6 +258,25 @@
             <span class="name">one king project like that nai go dey here</span>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <!--  Contact Me Section   -->
+    <section class="contact">
+      <p class="exp-title">Contact Me<span>04.</span></p>
+      <p class="pre">&lt;So what's next?/&gt;</p>
+      <h2>Let's Connect</h2>
+      <div class="inner">
+        <div class="form"></div>
+        <div class="note">
+          <p>
+            Presently, I'm open to full and part time frontend engineering
+            remote roles. If you have any, just want to say hi or have any
+            questions, feel free to send a mail 😊.
+          </p>
+          <p>Port- Harcourt. Nigeria</p>
+          <p>valentinesamuel080@gmail.com</p>
+        </div>
       </div>
     </section>
   </section>

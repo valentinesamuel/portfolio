@@ -400,6 +400,7 @@ button {
       margin: 43px 0 120px 0;
     }
     .other-projects {
+      margin-bottom: 200px;
       h2 {
         margin-bottom: 12px;
         font-size: 2.23rem;
@@ -428,6 +429,18 @@ button {
             font-size: 1.2rem;
           }
         }
+      }
+    }
+
+
+    .contact{
+      .pre{
+        color: var(--sec);
+      }
+      h2{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        margin-top: 20px;
       }
     }
   }
