@@ -7,16 +7,19 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--lato);
-  
+
   color: var(--text);
 }
 
 :root {
   --pri: #181d27;
-  --pri-tint: #0D1525;
+  --pri-tint: #0d1525;
   --sec: #fed253;
   --sec-tint: #fed3532f;
-  --project:#292F3A;
+  --project: #292f3a;
+  --project-text: #ffffff;
+  --project-button: #4d5158;
+  --project-button-hover: #ffffff;
   --text: #cecece;
   --em-text: #fed253;
   --sup-text: #ffffff;
@@ -30,10 +33,14 @@
 
 .dark {
   --pri: #fbfbfb;
+  --pri-tint: #696c76;
   --sec: #ffbd00;
   --sec-tint: #ffbb001c;
   --experience-higlight: #091225;
-
+  --project: #a1a3a9;
+  --project-button: #ffbd00;
+  --project-button-hover: #ffbd00;
+  --project-text: #ffffff;
   --prof-text: #a2a2a2;
   --text: #181d27;
   --em-text: #fed253;

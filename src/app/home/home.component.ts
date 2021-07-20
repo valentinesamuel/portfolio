@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   darkTheme = true;
+  seeOthers = false;
   company: any = 'freelance';
   selected
 
@@ -18,7 +19,10 @@ export class HomeComponent implements OnInit {
   selectCompany(id: any) {
     this.company = id;
     this.selected = !this.selected;
+  }
 
+  seeOtherProjects(){
+    this.seeOthers = !this.seeOthers;
   }
 
 
