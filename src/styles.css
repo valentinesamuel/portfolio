@@ -6,15 +6,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--roboto);
-  background-color: var(--pri);
+  font-family: var(--lato);
+  
   color: var(--text);
 }
 
 :root {
   --pri: #181d27;
+  --pri-tint: #0D1525;
   --sec: #fed253;
   --sec-tint: #fed3532f;
+  --project:#292F3A;
   --text: #cecece;
   --em-text: #fed253;
   --sup-text: #ffffff;
@@ -23,6 +25,7 @@
 
   --aladin: "Aladin", cursive;
   --roboto: "Roboto", sans-serif;
+  --lato: "Lato", sans-serif;
 }
 
 .dark {
