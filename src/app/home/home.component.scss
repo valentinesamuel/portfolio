@@ -185,7 +185,6 @@
       display: flex;
       margin-bottom: 100px;
       width: 100%;
-      // justify-content: center;
       ul {
         max-width: max-content;
         padding: 0;
@@ -238,7 +237,7 @@
               display: flex;
               align-items: baseline;
               margin-bottom: 18px;
-              &::before{
+              &::before {
                 content: "▹";
                 color: var(--sec);
               }
