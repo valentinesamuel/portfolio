@@ -8,7 +8,7 @@ import { FormControl, FormControlDirective, FormGroup, Validators } from '@angul
 })
 export class HomeComponent implements OnInit {
   contactForm: FormGroup;
-  darkTheme = true;
+  darkTheme = false;
 
   seeOthers = true;
   company: any = 'freelance';
@@ -34,8 +34,9 @@ export class HomeComponent implements OnInit {
     this.seeOthers = !this.seeOthers;
   }
 
-  onSubmit() {
-
+  onSubmit(form) {
+    
+    console.log(form);
   }
 
   getCurrentYear() {
@@ -44,5 +45,24 @@ export class HomeComponent implements OnInit {
     return currentYear;
 
   }
+
+  nameErrorAlert() {
+    const nameField = this.contactForm.get('name');
+    if (nameField.status == "INVALID" && nameField.touched == true && nameField.dirty == true && nameField.value != '') {
+      return 'Please enter a valid name ';
+    }
+    }
+  emailErrorAlert() {
+    const emailField = this.contactForm.get('email');
+    if (emailField.status == "INVALID" && emailField.touched == true && emailField.dirty == true && emailField.value != '') {
+      return 'Please enter a valid email ';
+    }
+    }
+  messageErrorAlert() {
+    const messageField = this.contactForm.get('message');
+    if (messageField.status == "INVALID" && messageField.touched == true && messageField.dirty == true && messageField.value != '') {
+      return 'Please add a few more details';
+    }
+    }
 
 }

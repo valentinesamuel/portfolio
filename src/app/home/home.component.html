@@ -9,12 +9,11 @@
   </nav>
 
   <div class="socials">
-    <span><img src="../../assets/icons/github.svg" alt="github"></span>
-    <span><img src="../../assets/icons/instagram.svg" alt="instagram"></span>
-    <span><img src="../../assets/icons/linkedin.svg" alt="linkedin"></span>
-    <span><img src="../../assets/icons/linktree.svg" alt="linktree"></span>
-    <span><img src="../../assets/icons/twitter.svg" alt="twitter"></span>
-  
+    <span><img src="../../assets/icons/github.svg" alt="github" /></span>
+    <span><img src="../../assets/icons/instagram.svg" alt="instagram" /></span>
+    <span><img src="../../assets/icons/linkedin.svg" alt="linkedin" /></span>
+    <span><img src="../../assets/icons/linktree.svg" alt="linktree" /></span>
+    <span><img src="../../assets/icons/twitter.svg" alt="twitter" /></span>
   </div>
 
   <section class="body">
@@ -239,7 +238,7 @@
         </div>
       </div>
       <div class="see-others">
-        <button (click)="seeOtherProjects()">
+        <button class="seeArchive" (click)="seeOtherProjects()">
           {{ seeOthers ? "Hide" : "See" }} Other Projects
         </button>
       </div>
@@ -277,16 +276,24 @@
       <h2>Let's Connect</h2>
       <div class="inner">
         <div class="form">
-          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <form
+            [formGroup]="contactForm"
+            (ngSubmit)="onSubmit(contactForm.value)"
+          >
+            <p class="errormsg">{{ nameErrorAlert() }}</p>
             <input type="text" formControlName="name" placeholder="Name" />
+            <p class="errormsg">{{ emailErrorAlert() }}</p>
             <input type="email" formControlName="email" placeholder="E-mail" />
+            <p class="errormsg">{{ messageErrorAlert() }}</p>
             <textarea
               formControlName="message"
               cols="30"
               rows="10"
               placeholder="Message"
             ></textarea>
-            <button>Send Message</button>
+            <button [ngClass]="!contactForm.valid ? 'disabled' : 'submit'">
+              Send Message
+            </button>
           </form>
         </div>
         <div class="note">

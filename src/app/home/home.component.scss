@@ -21,7 +21,7 @@
     background-color: var(--sup-text);
   }
 }
-button {
+.btn {
   padding: 0.6875rem 1.6875rem;
   border: 2px solid var(--sec);
   color: var(--sec);
@@ -30,6 +30,16 @@ button {
   cursor: pointer;
   &:hover {
     background: var(--sec-tint);
+  }
+}
+.disabled {
+  @extend .btn;
+  width: max-content;
+  border: 2px solid grey;
+  cursor: not-allowed;
+  color: gray;
+  &:hover {
+    background-color: transparent;
   }
 }
 
@@ -78,14 +88,19 @@ button {
     flex-direction: column;
     bottom: 0;
     padding: 0 50px 0 50px;
+
     span {
       padding: 20px;
+      &:hover {
+        transform: translateY(-10px);
+        transition: 1s;
+      }
     }
     &::after {
       content: "";
       display: block;
       width: 1px;
-      height:200px;
+      height: 200px;
       background-color: var(--sec);
     }
   }
@@ -123,6 +138,9 @@ button {
           margin-top: 1.125rem;
           margin-bottom: 2.875rem;
           color: var(--prof-text);
+        }
+        .connect {
+          @extend .btn;
         }
       }
       .about {
@@ -280,6 +298,8 @@ button {
     }
 
     .project-container {
+      // width: 80%;
+      // margin: 0 auto;
       .p1 {
         transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
         display: flex;
@@ -357,6 +377,7 @@ button {
             padding-left: 20px;
             font-size: 18px;
             background-color: var(--project-button);
+            transition-timing-function: ease-out;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
           }
         }
@@ -365,7 +386,9 @@ button {
           background-color: var(--pri-tint);
           &::after {
             visibility: visible;
-            background-color: orange;
+            background: url(../../assets/samuel-regan-asante-awXQiHUF4IU-unsplash.jpg)
+              no-repeat center;
+            background-size: cover;
             transform: translateX(-20px);
             box-shadow: -15px 6px 20px rgba(0, 0, 0, 0.35);
           }
@@ -421,6 +444,10 @@ button {
     .see-others {
       text-align: center;
       margin: 43px 0 120px 0;
+
+      .seeArchive {
+        @extend .btn;
+      }
     }
     .other-projects {
       margin-bottom: 200px;
@@ -471,7 +498,10 @@ button {
           width: 350px;
           display: flex;
           flex-direction: column;
-
+          .errormsg {
+            padding: 0 0 10px 0;
+            color: rgb(241, 101, 101);
+          }
           input {
             height: 46px;
             border-radius: 6px;
@@ -490,7 +520,8 @@ button {
             min-height: 180px;
             margin-bottom: 70px;
           }
-          button {
+          .submit {
+            @extend .btn;
             width: max-content;
           }
         }
