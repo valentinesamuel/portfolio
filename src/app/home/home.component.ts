@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   darkTheme = true;
-  company: any = 'mission';
+  company: any = 'freelance';
   selected
 
   constructor() { }
