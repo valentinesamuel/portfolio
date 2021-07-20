@@ -8,6 +8,15 @@
     </ul>
   </nav>
 
+  <div class="socials">
+    <span><img src="../../assets/icons/github.svg" alt="github"></span>
+    <span><img src="../../assets/icons/instagram.svg" alt="instagram"></span>
+    <span><img src="../../assets/icons/linkedin.svg" alt="linkedin"></span>
+    <span><img src="../../assets/icons/linktree.svg" alt="linktree"></span>
+    <span><img src="../../assets/icons/twitter.svg" alt="twitter"></span>
+  
+  </div>
+
   <section class="body">
     <h1 class="logo">&lt;VS/&gt;</h1>
     <!--   Intro section     -->
@@ -267,17 +276,36 @@
       <p class="pre">&lt;So what's next?/&gt;</p>
       <h2>Let's Connect</h2>
       <div class="inner">
-        <div class="form"></div>
+        <div class="form">
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <input type="text" formControlName="name" placeholder="Name" />
+            <input type="email" formControlName="email" placeholder="E-mail" />
+            <textarea
+              formControlName="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <button>Send Message</button>
+          </form>
+        </div>
         <div class="note">
           <p>
             Presently, I'm open to full and part time frontend engineering
             remote roles. If you have any, just want to say hi or have any
-            questions, feel free to send a mail 😊.
+            questions, feel free to leave a message. 😊
           </p>
-          <p>Port- Harcourt. Nigeria</p>
-          <p>valentinesamuel080@gmail.com</p>
+          <p class="location">Port- Harcourt, Nigeria</p>
         </div>
       </div>
     </section>
+
+    <div class="footer">
+      <p>Designed and Built by Samuel Valentine.</p>
+      <p>
+        <span class="copyright">&copy;</span> {{ getCurrentYear() }} All Rights
+        Reserved
+      </p>
+    </div>
   </section>
 </div>

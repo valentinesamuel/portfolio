@@ -70,8 +70,29 @@ button {
     }
   }
 
+  .socials {
+    position: fixed;
+    right: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    padding: 0 50px 0 50px;
+    span {
+      padding: 20px;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height:200px;
+      background-color: var(--sec);
+    }
+  }
+
   .body {
     margin: 0px auto;
+    padding: 0 200px 0 200px;
 
     .logo {
       font-family: var(--aladin);
@@ -117,11 +138,13 @@ button {
     }
 
     .about-me {
+      margin: 0 auto;
       max-width: 900px;
       padding-bottom: 130px;
-      margin: 0 auto;
       .inner {
-        display: flex;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+
         .text {
           line-height: 32px;
           max-width: 500px;
@@ -432,15 +455,74 @@ button {
       }
     }
 
-
-    .contact{
-      .pre{
+    .contact {
+      .pre {
         color: var(--sec);
       }
-      h2{
+      h2 {
         font-size: 2.5rem;
         text-transform: uppercase;
         margin-top: 20px;
+        padding-bottom: 20px;
+      }
+      .inner {
+        display: flex;
+        form {
+          width: 350px;
+          display: flex;
+          flex-direction: column;
+
+          input {
+            height: 46px;
+            border-radius: 6px;
+            background-color: #53565d;
+            padding-left: 20px;
+            margin-bottom: 25px;
+            border: none;
+
+            &:focus {
+              outline: none;
+            }
+          }
+          textarea {
+            padding-top: 20px;
+            @extend input;
+            min-height: 180px;
+            margin-bottom: 70px;
+          }
+          button {
+            width: max-content;
+          }
+        }
+        .note {
+          max-width: 500px;
+          margin-left: 150px;
+          p {
+            font-size: 1.5rem;
+            line-height: 3rem;
+            letter-spacing: 0.05em;
+          }
+          .location {
+            margin: 40px 0 20px 0;
+            color: var(--sup-text);
+          }
+          .mail {
+            color: var(--sec);
+          }
+        }
+      }
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 130px;
+      padding-bottom: 30px;
+      span {
+        color: var(--sec);
+      }
+      p {
+        margin: 20px 0 20px 0;
+        font-size: 1.2rem;
       }
     }
   }
