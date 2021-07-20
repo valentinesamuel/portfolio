@@ -59,8 +59,7 @@
   }
 
   .body {
-    margin: 0 370px 0 370px;
-    width: 100%;
+    margin: 0px auto;
 
     .logo {
       font-family: var(--aladin);
@@ -75,7 +74,6 @@
       display: flex;
       justify-content: space-between;
       padding-bottom: 10rem;
-      margin: 0 5rem 0 5rem;
       height: 100vh;
       .name {
         p {
@@ -106,6 +104,7 @@
         }
       }
       .about {
+        margin-left: 12rem;
         max-width: 31.25rem;
         font-size: 1.25rem;
         line-height: 3rem;
@@ -117,61 +116,63 @@
     }
 
     .about-me {
-      width: 100%;
-      margin-bottom: 130px;
-      display: flex;
-      .text {
-        max-width: 500px;
-        line-height: 32px;
-
-        .p1,
-        .p2 {
-          margin-bottom: 20px;
-          i {
-            color: var(--sec);
+      max-width: 900px;
+      padding-bottom: 130px;
+      margin: 0 auto;
+      .inner {
+        display: flex;
+        .text {
+          line-height: 32px;
+          max-width: 500px;
+          .p1,
+          .p2 {
+            margin-bottom: 20px;
+            i {
+              color: var(--sec);
+            }
           }
-        }
 
-        .tech {
-          ul {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(140px, 200px));
-            gap: 0px 10px;
-            padding: 0px;
-            margin: 20px 0px 0px;
-            overflow: hidden;
-            list-style: none;
-            li {
-              margin-bottom: 10px;
-              &::before {
-                content: "▹";
-                color: var(--sec);
+          .tech {
+            ul {
+              display: grid;
+              grid-template-columns: repeat(2, minmax(140px, 200px));
+              gap: 0px 10px;
+              padding: 0px;
+              margin: 20px 0px 0px;
+              overflow: hidden;
+              list-style: none;
+              li {
+                margin-bottom: 10px;
+                &::before {
+                  content: "▹";
+                  color: var(--sec);
+                }
               }
             }
           }
         }
-      }
-      .image {
-        margin-left: 20px;
-        height: 380px;
-        width: 350px;
-        &::after {
-          content: "";
-          display: flex;
-          position: relative;
-          bottom: 50%;
-          left: 5%;
-          bottom: 96%;
-          width: 100%;
-          height: 100%;
-          border: 4px solid var(--sec);
-          border-radius: 6px;
-        }
-        img {
-          border-radius: 6px;
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
+        .image {
+          margin-left: 20px;
+          height: 380px;
+          width: 350px;
+          &::after {
+            content: "";
+            display: flex;
+            position: relative;
+            bottom: 50%;
+            left: 5%;
+            bottom: 96%;
+            width: 100%;
+            height: 100%;
+            border: 4px solid var(--sec);
+            border-radius: 6px;
+          }
+          img {
+            border-radius: 6px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
         }
       }
     }
@@ -185,9 +186,12 @@
       }
     }
     .experience {
-      display: flex;
-      margin-bottom: 100px;
-      width: 100%;
+      padding-bottom: 200px;
+      margin: 0 auto;
+      max-width: 750px;
+      .inner {
+        display: flex;
+      }
       ul {
         max-width: max-content;
         padding: 0;
@@ -195,6 +199,7 @@
         margin-right: 20px;
 
         li {
+          white-space: nowrap;
           display: flex;
           max-width: 100%;
           justify-content: left;
@@ -212,11 +217,10 @@
       }
 
       .content {
-        min-height: 100%;
+        max-height: 800px;
         .value {
           max-width: 600px;
-
-          h2 {
+          h2{
             font-size: 1.5rem;
             font-weight: 500;
             margin-bottom: 5px;
@@ -230,10 +234,11 @@
               }
             }
           }
-
+          
           ul {
             margin-top: 20px;
             li {
+              white-space: normal;
               border: none;
               padding: 0;
               line-height: 27px;
