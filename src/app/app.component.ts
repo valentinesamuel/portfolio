@@ -12,8 +12,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     setTimeout(() => {
-      // this.splash = !this.splash;
-      // this.router.navigate(['/home'])
+      this.splash = !this.splash;
+      this.router.navigate(['/home'])
     }, 3000);
   }
 }
