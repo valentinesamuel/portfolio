@@ -8,6 +8,7 @@ import { ArchiveProjectsComponent } from './archive-projects/archive-projects.co
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ThemeCheckerComponent } from './theme-checker/theme-checker.component';
+import { SplashComponent } from './splash/splash.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ThemeCheckerComponent } from './theme-checker/theme-checker.component';
     ArchiveProjectsComponent,
     HomeComponent,
     ProjectsComponent,
-    ThemeCheckerComponent
+    ThemeCheckerComponent,
+    SplashComponent
   ],
   imports: [
     BrowserModule,

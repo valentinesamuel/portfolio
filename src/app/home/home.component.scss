@@ -117,6 +117,7 @@
   margin: 0px auto;
   padding: 0 200px 0 200px;
 
+
   .logo {
     font-family: var(--aladin);
     color: var(--sec);
@@ -126,9 +127,12 @@
   }
 
   .switcher {
-    width: min-content;
+    // width: min-content;
+    position: absolute;
+    right: 0;
+    top: 5%;
     text-align: right;
-    transform: scale(0.4);
+    transform: scale(0.5);
   }
 
   .intro {
@@ -148,6 +152,7 @@
         width: 20rem;
       }
       h2 {
+        min-width: 500px;
         font-size: 3rem;
         margin-top: 1.125rem;
         margin-bottom: 2.875rem;
@@ -158,7 +163,7 @@
       }
     }
     .about {
-      margin-left: 12rem;
+      margin-left: 5%;
       max-width: 31.25rem;
       font-size: 1.25rem;
       line-height: 3rem;
