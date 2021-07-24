@@ -47,7 +47,7 @@
         .stack {
           p {
             margin: 0px 10px 15px 0px;
-            font-size: 1rem;
+            font-size: 0.8rem;
             color: var(--project-text);
           }
           display: flex;
@@ -78,7 +78,6 @@
         height: 54px;
         border-radius: 50%;
         white-space: nowrap;
-        color: white;
         text-transform: uppercase;
         display: flex;
         align-items: center;
@@ -94,28 +93,16 @@
         height: 100%;
         object-fit: cover;
         width: 20%;
-        // transition: 2s;
-        // display: none;
         position: relative;
         visibility: hidden;
         box-shadow: -15px 6px 20px rgba(0, 0, 0, 0.35);
-
         top: 0;
-
         left: 20%;
       }
     }
 
     &:hover {
       background-color: var(--pri-tint);
-      // &::after {
-      //   display: block;
-      //   background: url(../../assets/samuel-regan-asante-awXQiHUF4IU-unsplash.jpg)
-      //     no-repeat center;
-      //   background-size: cover;
-      //   transform: translateX(-20px);
-      //   box-shadow: -15px 6px 20px rgba(0, 0, 0, 0.35);
-      // }
       .info {
         background-color: var(--pri-tint);
         .sn {
@@ -148,28 +135,20 @@
           border-radius: 5px;
           width: auto;
           height: auto;
-          color: var(--pri);
+          color: var(--text);
           background-color: var(--project-button-hover);
+
+          &:hover {
+            background-color: var(--pri);
+            color: var(--sec);
+          }
         }
         animation-direction: reverse;
         img {
           animation: picturer 1s;
-          // left: -5%;
-          // display: inline;
-          // visibility: visible;
         }
       }
     }
-
-    // &::after {
-    //   content: "";
-    //   height: auto;
-    //   width: 20%;
-    //   transition: 1s;
-    //   transform: scale(1.2);
-    //   position: relative;
-    //   display: none;
-    // }
   }
 }
 .see-others {
