@@ -47,7 +47,7 @@
         .stack {
           p {
             margin: 0px 10px 15px 0px;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             color: var(--project-text);
           }
           display: flex;
@@ -93,11 +93,12 @@
         height: 100%;
         object-fit: cover;
         width: 20%;
+        transition: 1s;
         position: relative;
         visibility: hidden;
         box-shadow: -15px 6px 20px rgba(0, 0, 0, 0.35);
         top: 0;
-        left: 20%;
+        left: 10%;
       }
     }
 
@@ -123,7 +124,7 @@
           .stack {
             p {
               margin: 0px 10px 15px 0px;
-              font-size: 1.2rem;
+              font-size: 1rem;
             }
           }
           .src {
@@ -143,9 +144,10 @@
             color: var(--sec);
           }
         }
-        animation-direction: reverse;
         img {
-          animation: picturer 1s;
+          // animation: picturer 1s;
+          left: -5%;
+          visibility: visible;
         }
       }
     }

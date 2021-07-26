@@ -21,6 +21,7 @@
     background-color: var(--sup-text);
   }
 }
+
 .btn {
   padding: 0.6875rem 1.6875rem;
   border: 2px solid var(--sec);
@@ -32,6 +33,7 @@
     background: var(--sec-tint);
   }
 }
+
 .disabled {
   @extend .btn;
   width: max-content;
@@ -40,6 +42,31 @@
   color: gray;
   &:hover {
     background-color: transparent;
+  }
+}
+
+.socials {
+  position: fixed;
+  right: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  padding: 0 20px 0 20px;
+
+  span {
+    padding: 20px;
+    &:hover {
+      transform: translateY(-10px);
+      transition: 1s;
+    }
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100px;
+    background-color: var(--sec);
   }
 }
 
@@ -73,11 +100,10 @@
             color: var(--sec);
             margin-bottom: 10px;
           }
-        }
-        a:focus {
-          font-weight: 600;
-          color: var(--sec);
-          // outline: 2px dashed var(--sec);
+          &:focus {
+            font-weight: 600;
+            color: var(--sec);
+          }
         }
         .resume {
           @extend .btn;
@@ -88,35 +114,10 @@
   }
 }
 
-.socials {
-  position: fixed;
-  right: 0;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  bottom: 0;
-  padding: 0 20px 0 20px;
-
-  span {
-    padding: 20px;
-    &:hover {
-      transform: translateY(-10px);
-      transition: 1s;
-    }
-  }
-  &::after {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 100px;
-    background-color: var(--sec);
-  }
-}
-
 .body {
   margin: 0px auto;
   padding: 0 200px 0 200px;
-
+  width: 100%;
 
   .logo {
     font-family: var(--aladin);
@@ -144,7 +145,7 @@
     .name {
       p {
         color: var(--sec);
-        margin-bottom: 2.875rem;
+        margin-bottom: 2.8rem;
       }
       h1 {
         font-size: 4.5rem;
@@ -152,10 +153,9 @@
         width: 20rem;
       }
       h2 {
-        min-width: 500px;
+        white-space: nowrap;
         font-size: 3rem;
-        margin-top: 1.125rem;
-        margin-bottom: 2.875rem;
+        margin: 1.1rem 0 2.8rem 0;
         color: var(--prof-text);
       }
       .connect {
@@ -179,8 +179,7 @@
     max-width: 900px;
     padding-bottom: 130px;
     .inner {
-      display: grid;
-      grid-template-columns: 3fr 2fr;
+      display: flex;
 
       .text {
         line-height: 32px;
@@ -388,6 +387,61 @@
     p {
       margin: 20px 0 20px 0;
       font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .body {
+    padding: 0 10% 0 10%;
+    .contact {
+      .inner {
+        .note {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .body {
+    padding: 0 12% 0 10%;
+    .intro {
+      .name {
+        h1 {
+          font-size: 3rem;
+        }
+        h2 {
+          font-size: 2.2rem;
+          margin-right: 40px;
+        }
+        p {
+          margin-bottom: 1rem;
+        }
+      }
+      .about {
+        margin-left: 0;
+      }
+    }
+    .about-me {
+      .inner {
+        flex-direction: column;
+        .text {
+          max-width: 100%;
+        }
+        .image {
+          margin-left: 0;
+          margin-top: 80px;
+        }
+      }
+    }
+    .contact {
+      .inner {
+        .note {
+          margin-left: 30px;
+        }
+      }
     }
   }
 }
