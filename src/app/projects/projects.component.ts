@@ -9,7 +9,7 @@ import { ArchivedProject, Project } from './project-list.model';
 
 
 export class ProjectsComponent implements OnInit {
-  seeOthers = true;
+  seeOthers = false;
   projectList: Project[] = [
     {
       name: 'Project ',
