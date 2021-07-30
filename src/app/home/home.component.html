@@ -17,17 +17,10 @@
     </ul>
   </nav>
 
-  <div class="socials">
-    <span><img src="../../assets/icons/github.svg" alt="github" /></span>
-    <span><img src="../../assets/icons/instagram.svg" alt="instagram" /></span>
-    <span><img src="../../assets/icons/linkedin.svg" alt="linkedin" /></span>
-    <span><img src="../../assets/icons/linktree.svg" alt="linktree" /></span>
-    <span><img src="../../assets/icons/twitter.svg" alt="twitter" /></span>
-  </div>
-
   <section class="body">
-    <h1 class="logo">&lt;VS/&gt;</h1>
-    <app-theme-checker class="switcher"
+    <div class="appbar"><h1 class="logo">&lt;VS/&gt;</h1></div>
+    <app-theme-checker
+      class="switcher"
       (changeTheme)="darkTheme = !darkTheme"
     ></app-theme-checker>
     <!--   Intro section     -->
@@ -45,6 +38,7 @@
           <span>freelance frontend engineer</span> open to full and part time
           remote roles.
         </p>
+        <button class="mobile-connect">Let's Connect</button>
       </div>
     </section>
 
@@ -226,6 +220,16 @@
         </div>
       </div>
     </section>
+
+    <div class="socials">
+      <span><img src="../../assets/icons/github.svg" alt="github" /></span>
+      <span
+        ><img src="../../assets/icons/instagram.svg" alt="instagram"
+      /></span>
+      <span><img src="../../assets/icons/linkedin.svg" alt="linkedin" /></span>
+      <span><img src="../../assets/icons/linktree.svg" alt="linktree" /></span>
+      <span><img src="../../assets/icons/twitter.svg" alt="twitter" /></span>
+    </div>
 
     <div class="footer">
       <p>Designed and Built by Samuel Valentine.</p>

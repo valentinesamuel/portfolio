@@ -2,8 +2,7 @@
 @import "../home/home.component.scss";
 
 .project-container {
-  // width: 80%;
-  // margin: 0 auto;
+ 
   .p1 {
     transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
     display: flex;
@@ -153,6 +152,30 @@
     }
   }
 }
+
+// Mobile Version
+@media (max-width: 480px) {
+.project-container{
+  .p1{
+  .info{
+    width:100%;
+      .sn{
+        margin-right: 0;
+      &::before{
+        width: 12px;
+      }
+    img{
+display:none;
+    }
+    }
+    img{
+      display: none;
+    }
+  }
+  }
+}
+}
+
 .see-others {
   text-align: center;
   margin: 43px 0 120px 0;

@@ -119,16 +119,20 @@
   padding: 0 200px 0 200px;
   width: 100%;
 
-  .logo {
-    font-family: var(--aladin);
-    color: var(--sec);
-    text-align: center;
-    padding-top: 2rem;
-    font-size: 3rem;
+  .appbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logo {
+      font-family: var(--aladin);
+      color: var(--sec);
+      text-align: center;
+      padding-top: 2rem;
+      font-size: 3rem;
+    }
   }
 
   .switcher {
-    // width: min-content;
     position: absolute;
     right: 0;
     top: 5%;
@@ -160,6 +164,7 @@
       }
       .connect {
         @extend .btn;
+        display: block;
       }
     }
     .about {
@@ -170,6 +175,10 @@
       letter-spacing: 0.095em;
       span {
         color: var(--sec);
+      }
+      .mobile-connect{
+        @extend .btn;
+        display: none;
       }
     }
   }
@@ -457,10 +466,14 @@
 // Mobile Version
 @media (max-width: 480px) {
   .body {
-    .logo {
-      position: static;
-      font-size: 2rem;
-      text-align: left;
+    .appbar {
+      display: flex;
+      align-items: center;
+      .logo {
+        position: static;
+        font-size: 2rem;
+        text-align: left;
+      }
     }
     padding: 0 25px 0 25px;
     .intro {
@@ -478,6 +491,13 @@
         }
         .connect {
           margin-top: 25px;
+          display: none;
+        }
+      }
+      .about{
+        .mobile-connect{
+          display: block;
+          margin-top: 30px;
         }
       }
     }
@@ -519,6 +539,9 @@
         }
       }
     }
+    .footer{
+      margin-top: 30px;
+    }
   }
   .layout {
     display: flex;
@@ -527,6 +550,14 @@
     }
   }
   .socials {
-    display: none;
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: space-between;
+    &::after {
+      display: none;
+    }
   }
 }
