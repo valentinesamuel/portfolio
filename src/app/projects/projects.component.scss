@@ -2,7 +2,6 @@
 @import "../home/home.component.scss";
 
 .project-container {
- 
   .p1 {
     transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
     display: flex;
@@ -155,25 +154,32 @@
 
 // Mobile Version
 @media (max-width: 480px) {
-.project-container{
-  .p1{
-  .info{
-    width:100%;
-      .sn{
-        margin-right: 0;
-      &::before{
-        width: 12px;
+  .project-container {
+    .p1 {
+      .info {
+        width: 100%;
+        justify-content: left;
+        .sn {
+          margin-right: 0;
+          &::before {
+            width: 12px;
+          }
+          img {
+            display: none;
+          }
+        }
+        img {
+          display: none;
+        }
+        button{
+          position: relative;
+          top: 20%;
+          right: 0;
+          font-size: 1rem;
+        }
       }
-    img{
-display:none;
-    }
-    }
-    img{
-      display: none;
     }
   }
-  }
-}
 }
 
 .see-others {
