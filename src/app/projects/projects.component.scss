@@ -143,7 +143,6 @@
           }
         }
         img {
-          // animation: picturer 1s;
           left: -5%;
           visibility: visible;
         }
@@ -158,7 +157,7 @@
     .p1 {
       .info {
         width: 100%;
-        justify-content: left;
+        justify-content: space-between;
         .sn {
           margin-right: 0;
           &::before {
@@ -171,11 +170,27 @@
         img {
           display: none;
         }
-        button{
+        button {
+          margin-right: 10px;
           position: relative;
           top: 20%;
           right: 0;
-          font-size: 1rem;
+          padding: 12px;
+          font-size: 0.7rem;
+          height: auto;
+          width: auto;
+          border-radius: 0;
+          background-color: var(--project-button-hover);
+          color: var(--pri);
+        }
+        &:hover {
+          .sn {
+            &::before {
+              width: 50%;
+            }
+          }
+          button {
+          }
         }
       }
     }

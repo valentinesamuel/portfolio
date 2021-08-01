@@ -176,7 +176,7 @@
       span {
         color: var(--sec);
       }
-      .mobile-connect{
+      .mobile-connect {
         @extend .btn;
         display: none;
       }
@@ -336,8 +336,12 @@
     }
     .inner {
       display: flex;
+      justify-content: space-between;
+      .form {
+        width: 50%;
+      }
       form {
-        width: 350px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         .errormsg {
@@ -494,8 +498,8 @@
           display: none;
         }
       }
-      .about{
-        .mobile-connect{
+      .about {
+        .mobile-connect {
           display: block;
           margin-top: 30px;
         }
@@ -532,14 +536,16 @@
     .contact {
       .inner {
         flex-direction: column-reverse;
-
+        .form {
+          width: 100%;
+        }
         .note {
           margin-left: 0;
           max-width: 100%;
         }
       }
     }
-    .footer{
+    .footer {
       margin-top: 30px;
     }
   }
