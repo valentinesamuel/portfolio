@@ -120,6 +120,7 @@
   width: 100%;
 
   .appbar {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,6 +134,7 @@
   }
 
   .switcher {
+    margin-top: 2.5%;
     position: absolute;
     right: 0;
     top: 5%;
@@ -352,7 +354,7 @@
           height: 46px;
           border-radius: 6px;
           background-color: #53565d;
-          padding-left: 20px;
+          padding: 0 20px 0 20px;
           margin-bottom: 25px;
           border: none;
 
@@ -471,6 +473,7 @@
 @media (max-width: 480px) {
   .body {
     .appbar {
+      padding-top: 10%;
       display: flex;
       align-items: center;
       .logo {
@@ -478,6 +481,9 @@
         font-size: 2rem;
         text-align: left;
       }
+    }
+    .switcher {
+      margin-top: 10%;
     }
     padding: 0 25px 0 25px;
     .intro {
@@ -552,7 +558,66 @@
   .layout {
     display: flex;
     nav {
-      display: none;
+      padding: 0;
+      height: auto;
+      border-right: none;
+      ul {
+        flex-direction: column;
+        background-color: var(--pri);
+        height: 100vh;
+        justify-content: space-evenly;
+        width: min(65vw, 246px);
+        text-align: center;
+        padding: 40% 0 40% 0;
+        box-shadow: -10px 0px 30px -15px var(--sec);
+        li {
+          writing-mode: horizontal-tb;
+          a {
+            span {
+              display: block;
+            }
+          }
+          .resume {
+            padding: 11px 27px;
+          }
+        }
+      }
+      .hide{
+        display: none;
+      }
+      .hamburger {
+        display: block;
+        position: fixed;
+        transform: scale(1.2);
+        transition-timing-function: linear;
+        transition-duration: 0.2s;
+        width: 100%;
+        background-color: var(--pri);
+        padding: 20px 0 20px 20px;
+        box-shadow: 0 10px 30px -10px var(--pri);
+        left: 10%;
+        .bar {
+          display: block;
+          width: 25px;
+          height: 3px;
+          margin: 5px;
+          background-color: var(--sec);
+          transition: all 0.3s ease-in-out;
+          &:nth-child(2) {
+            opacity: var(--clear);
+          }
+          &:nth-child(1) {
+            transform: var(--leftward);
+          }
+          &:nth-child(3) {
+            transform: var(--rightward);
+          }
+        }
+        &:focus {
+          outline: 2px dashed var(--sec);
+          outline-offset: 3px;
+        }
+      }
     }
   }
   .socials {

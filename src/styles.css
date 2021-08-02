@@ -46,3 +46,9 @@
   --em-text: #fed253;
   --sup-text: #181d27;
 }
+
+.open{
+  --clear: 0;
+  --leftward:translateY(8px) rotate(45deg);
+  --rightward:translateY(-8px) rotate(-45deg);
+}

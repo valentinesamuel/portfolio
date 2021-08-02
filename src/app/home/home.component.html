@@ -1,6 +1,6 @@
 <div class="layout" [ngClass]="!darkTheme ? 'dark' : ''">
   <nav>
-    <ul>
+    <ul #menu [ngClass]="mobileMenu ? '' : 'hide'">
       <li>
         <a href="/#about"><span>01.</span>About Me</a>
       </li>
@@ -15,6 +15,16 @@
       </li>
       <li><span class="resume">Resume</span></li>
     </ul>
+    <div
+      #hamBtn
+      [ngClass]="mobileMenu ? 'open' : ''"
+      (click)="showMobileMenu()"
+      class="hamburger"
+    >
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
   </nav>
 
   <section class="body">
