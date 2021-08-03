@@ -367,6 +367,7 @@
           @extend input;
           min-height: 180px;
           margin-bottom: 70px;
+         resize: vertical;
         }
         .submit {
           @extend .btn;
