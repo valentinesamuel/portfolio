@@ -511,6 +511,13 @@
         }
       }
     }
+    .about-me .inner .image {
+      width: 100%;
+      &::after {
+       
+        width: 99%;
+      }
+    }
     .experience {
       .inner {
         flex-direction: column;
@@ -582,7 +589,7 @@
           }
         }
       }
-      .hide{
+      .hide {
         display: none;
       }
       .hamburger {
@@ -627,6 +634,9 @@
     width: 100%;
     margin-top: 30px;
     justify-content: space-between;
+    span{
+      padding: 10px;
+    }
     &::after {
       display: none;
     }
