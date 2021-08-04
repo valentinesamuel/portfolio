@@ -1,23 +1,6 @@
 <p class="title" id="projects"><span>03.</span>Projects</p>
 <section class="project-container">
-  <div *ngFor="let project of projectList; let i = index">
-    <div class="p1">
-      <div class="info">
-        <p class="sn">{{ i }}</p>
-        <div class="details">
-          <h3>{{ project.name }}{{i}}</h3>
-          <div class="stack">
-            <p *ngFor="let tech of project.stack">{{ tech }}</p>
-          </div>
-          <a [href]="project.repo">
-            <p class="src">&lt;src/&gt;</p>
-          </a>
-        </div>
-        <button><a [href]=project.liveDemo>View Project</a></button>
-        <img src="../../assets/samuel-regan-asante-awXQiHUF4IU-unsplash.jpg" alt="project-image">
-      </div>
-    </div>
-  </div>
+ 
 
   <div class="see-others">
     <button class="seeArchive" (click)="seeOtherProjects()">

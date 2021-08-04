@@ -12,16 +12,16 @@ export class ProjectsComponent implements OnInit {
   seeOthers = false;
   projectList: Project[] = [
     {
-      name: 'Project ',
-      stack: ['HTML', 'CSS'],
-      repo: 'git-sample1.com',
-      liveDemo: 'project1.com'
+      name: 'Spotify Clone ',
+      stack: [ 'Angular', 'Git', 'APIs'],
+      repo: 'https://github.com/valentinesamuel/music-app',
+      liveDemo: 'https://ng-spotify.netlify.app/'
     },
     {
-      name: 'Project ',
-      stack: ['JS', 'TS'],
-      repo: 'git-sample2.com',
-      liveDemo: 'project2.com'
+      name: 'Github Clone',
+      stack: ['Javascript', 'Git', 'APIs'],
+      repo: 'https://github.com/valentinesamuel/BuyCoins-FE-Application',
+      liveDemo: 'https://buycoins-github.netlify.app/'
     },
     {
       name: 'Project ',
