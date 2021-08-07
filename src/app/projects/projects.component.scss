@@ -34,14 +34,22 @@
         margin-left: 20%;
         .stack {
           display: flex;
+          margin: 20px 0 20px 0;
           span {
             margin-right: 10px;
           }
         }
         h3,
-        p {
+        p, a {
+          text-decoration: none;
           transition: 1s;
           display: flex;
+        }
+        .src{
+          color: var(--sec);
+          &:hover{
+            text-decoration: line-through;
+          }
         }
       }
     }
@@ -58,12 +66,16 @@
         z-index: 2;
         padding: 11px 27px;
         background-color: transparent;
-        border: 2px solid yellow;
+        border: 2px solid  var(--sec);
         border-radius: 5px;
         position: relative;
         right: 0;
-        color: yellow;
+        color: var(--sec);
         transition: 1s;
+        &:hover{
+          background-color: var(--sec-tint);
+          
+        }
       }
 
       img {
@@ -92,6 +104,7 @@
           p {
             font-size: 20px;
           }
+         
         }
       }
       .right {
