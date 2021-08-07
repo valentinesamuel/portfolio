@@ -9,7 +9,8 @@
     width: 100%;
     transition: 1s;
     justify-content: space-between;
-    background-color: red;
+    background-color: var(--project);
+  
 
     .left {
       min-width: 50%;
@@ -32,6 +33,7 @@
 
       .details {
         margin-left: 20%;
+        
         .stack {
           display: flex;
           margin: 20px 0 20px 0;
@@ -40,14 +42,17 @@
           }
         }
         h3,
-        p, a {
+        span,
+        p,
+        a {
+            color: var(--project-text);
           text-decoration: none;
           transition: 1s;
           display: flex;
         }
-        .src{
+        .src {
           color: var(--sec);
-          &:hover{
+          &:hover {
             text-decoration: line-through;
           }
         }
@@ -66,15 +71,14 @@
         z-index: 2;
         padding: 11px 27px;
         background-color: transparent;
-        border: 2px solid  var(--sec);
+        border: 2px solid var(--sec);
         border-radius: 5px;
         position: relative;
         right: 0;
         color: var(--sec);
         transition: 1s;
-        &:hover{
+        &:hover {
           background-color: var(--sec-tint);
-          
         }
       }
 
@@ -91,7 +95,7 @@
     }
 
     &:hover {
-      background-color: purple;
+      background-color: var(--project-hover);
       .left {
         .sn {
           font-size: 20px;
@@ -104,7 +108,6 @@
           p {
             font-size: 20px;
           }
-         
         }
       }
       .right {
@@ -142,6 +145,7 @@
       .right {
         justify-content: center;
         opacity: 0.5;
+        width: 100%;
         min-width: max-content;
         flex-direction: column;
         img {

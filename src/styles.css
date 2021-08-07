@@ -16,9 +16,10 @@
   --pri-tint: #0d1525;
   --sec: #fed253;
   --sec-tint: #fed3532f;
-  --project: #292f3a;
   --project-text: #ffffff;
   --project-button: #4d5158;
+  --project-hover: #13161c;
+  --project: #292f3a;
   --project-button-hover: #ffffff;
   --text: #9d9d9d;
   --em-text: #fed253;
@@ -38,6 +39,7 @@
   --sec-tint: #ffbb001c;
   --experience-higlight: #091225;
   --project: #a1a3a9;
+  --project-hover: #6b6a6a;
   --project-button: #ffbd00;
   --project-button-hover: #ffbd00;
   --project-text: #ffffff;
