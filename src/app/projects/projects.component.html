@@ -1,22 +1,21 @@
 <p class="title" id="projects"><span>03.</span>Projects</p>
 <section class="project-container">
- 
   <div class="project" *ngFor="let project of projectList; let i = index">
-  <div class="left">
-    <p class="sn">0{{i}}</p>
-    <div class="details">
-      <h3>{{project.name}}</h3>
-      <p class="stack" >
-        <span *ngFor="let tech of project.stack">{{tech}} </span>
-      </p>
-      <a href="http://"><p class="src">&lt;src/&gt;</p></a>
+    <div class="left">
+      <p class="sn">0{{ i }}</p>
+      <div class="details">
+        <h3>{{ project.name }}</h3>
+        <p class="stack">
+          <span *ngFor="let tech of project.stack">{{ tech }} </span>
+        </p>
+        <a href="gfeg"><p class="src">&lt;src/&gt;</p></a>
+      </div>
+    </div>
+    <div class="right">
+      <a href="hello"><button>View Project</button></a>
+      <img src="../../assets/samuel-regan-asante-awXQiHUF4IU-unsplash.jpg" />
     </div>
   </div>
-  <div class="right">
-    <a href="hello"><button>View Project</button></a>
-    <img src="../../assets/samuel-regan-asante-awXQiHUF4IU-unsplash.jpg" />
-  </div>
-</div>
 
   <div class="see-others">
     <button class="seeArchive" (click)="seeOtherProjects()">
@@ -31,10 +30,10 @@
     </p>
     <ul class="other-list" *ngFor="let arcProj of archivedList; let i = index">
       <li>
-        /{{i}} <a [href]="arcProj.repo"><span class="src">&lt;src/&gt;</span></a>
-        <span class="name">{{arcProj.name}}</span>
+        /{{ i }}
+        <a [href]="arcProj.repo"><span class="src">&lt;src/&gt;</span></a>
+        <span class="name">{{ arcProj.name }}</span>
       </li>
-      
     </ul>
   </div>
 </section>
