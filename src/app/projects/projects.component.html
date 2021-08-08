@@ -8,11 +8,11 @@
         <p class="stack">
           <span *ngFor="let tech of project.stack">{{ tech }} </span>
         </p>
-        <a href="gfeg"><p class="src">&lt;src/&gt;</p></a>
+        <a [href]="project.repo"><p class="src">&lt;src/&gt;</p></a>
       </div>
     </div>
     <div class="right">
-      <a href="hello"><button>View Project</button></a>
+      <a [href]="project.liveDemo"><button>View Project</button></a>
       <img src="../../assets/samuel-regan-asante-awXQiHUF4IU-unsplash.jpg" />
     </div>
   </div>

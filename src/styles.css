@@ -12,6 +12,8 @@
 }
 
 :root {
+  --outline:#ffbd00;
+  --outline-text:#9d9d9d;
   --pri: #181d27;
   --pri-tint: #0d1525;
   --sec: #fed253;
@@ -33,6 +35,8 @@
 }
 
 .dark {
+   --outline:#181d27;
+   --outline-text:#181d27;
   --pri: #fbfbfb;
   --pri-tint: #696c76;
   --sec: #ffbd00;
