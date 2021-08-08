@@ -488,7 +488,10 @@
     }
     padding: 0 25px 0 25px;
     .intro {
+      justify-content: flex-start;
+      padding-bottom: 0;
       flex-direction: column;
+      height: auto;
       align-items: flex-start;
       .name {
         margin-top: 5rem;
@@ -511,6 +514,9 @@
           margin-top: 30px;
         }
       }
+    }
+    .about-me{
+      margin-top: 100px;
     }
     .about-me .inner .image {
       width: 100%;

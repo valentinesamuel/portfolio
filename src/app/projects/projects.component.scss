@@ -124,6 +124,19 @@
   }
 }
 
+//Ipad Version
+@media (max-width: 768px) {
+  .project{
+    min-height: 179px;
+   padding-right: 25px;
+     .right{
+       img{
+         display: none;
+       }
+     }
+  }
+}
+
 // Mobile Version
 @media (max-width: 480px) {
   .project-container {
