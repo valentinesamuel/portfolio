@@ -12,7 +12,7 @@
 }
 
 :root {
-  --outline:#ffbd00;
+  --outline:#fed253;
   --outline-text:#9d9d9d;
   --pri: #181d27;
   --pri-tint: #0d1525;
@@ -39,13 +39,13 @@
    --outline-text:#181d27;
   --pri: #fbfbfb;
   --pri-tint: #696c76;
-  --sec: #ffbd00;
+  --sec: #fed253;
   --sec-tint: #ffbb001c;
   --experience-higlight: #091225;
   --project: #a1a3a9;
   --project-hover: #6b6a6a;
-  --project-button: #ffbd00;
-  --project-button-hover: #ffbd00;
+  --project-button: #fed253;
+  --project-button-hover: #fed253;
   --project-text: #ffffff;
   --prof-text: #a2a2a2;
   --text: #181d27;
