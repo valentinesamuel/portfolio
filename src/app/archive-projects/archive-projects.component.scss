@@ -1,4 +1,14 @@
 @import "../home/home.component.scss";
+
+
+.see-others {
+  text-align: center;
+  margin: 43px 0 120px 0;
+
+  .seeArchive {
+    @extend .btn;
+  }
+}
 .other-projects {
   margin-bottom: 200px;
   h2 {
@@ -30,4 +40,9 @@
       }
     }
   }
+}
+
+
+@media (max-width: 480px) {
+
 }
