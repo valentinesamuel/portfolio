@@ -1,0 +1,86 @@
+@import "../home/home.component.scss";
+
+ .inner {
+    display: flex;
+    justify-content: space-between;
+    .form {
+      width: 50%;
+    }
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .errormsg {
+        padding: 0 0 10px 0;
+        color: rgb(241, 101, 101);
+      }
+      input {
+        height: 46px;
+        border-radius: 6px;
+        background-color: #53565d;
+        padding: 0 20px 0 20px;
+        margin-bottom: 25px;
+        border: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
+      textarea {
+        padding-top: 20px;
+        @extend input;
+        min-height: 180px;
+        margin-bottom: 70px;
+        resize: vertical;
+      }
+      .submit {
+        @extend .btn;
+        width: max-content;
+      }
+    }
+    .note {
+      max-width: 500px;
+      margin-left: 150px;
+      p {
+        font-size: 1.2rem;
+        line-height: 3rem;
+        letter-spacing: 0.05em;
+      }
+      .location {
+        margin: 40px 0 20px 0;
+        color: var(--sup-text);
+      }
+      .mail {
+        color: var(--sec);
+      }
+    }
+  }
+
+
+@media (max-width: 768px) {
+
+    .inner {
+      .note {
+        margin-left: 30px;
+      }
+      form {
+        width: 100%;
+      }
+    }
+  
+}
+
+@media (max-width: 480px) {
+
+    .inner {
+      flex-direction: column-reverse;
+      .form {
+        width: 100%;
+      }
+      .note {
+        margin-left: 0;
+        max-width: 100%;
+      }
+    }
+  
+}

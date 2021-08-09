@@ -165,8 +165,8 @@
         margin: 1.1rem 0 2.8rem 0;
         color: var(--prof-text);
       }
-      a{
-        text-decoration: none
+      a {
+        text-decoration: none;
       }
       .connect {
         @extend .btn;
@@ -264,8 +264,6 @@
     padding-bottom: 200px;
     margin: 0 auto;
     max-width: 850px;
- 
-    
   }
 
   .contact {
@@ -277,61 +275,6 @@
       text-transform: uppercase;
       margin-top: 20px;
       padding-bottom: 20px;
-    }
-    .inner {
-      display: flex;
-      justify-content: space-between;
-      .form {
-        width: 50%;
-      }
-      form {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        .errormsg {
-          padding: 0 0 10px 0;
-          color: rgb(241, 101, 101);
-        }
-        input {
-          height: 46px;
-          border-radius: 6px;
-          background-color: #53565d;
-          padding: 0 20px 0 20px;
-          margin-bottom: 25px;
-          border: none;
-
-          &:focus {
-            outline: none;
-          }
-        }
-        textarea {
-          padding-top: 20px;
-          @extend input;
-          min-height: 180px;
-          margin-bottom: 70px;
-         resize: vertical;
-        }
-        .submit {
-          @extend .btn;
-          width: max-content;
-        }
-      }
-      .note {
-        max-width: 500px;
-        margin-left: 150px;
-        p {
-          font-size: 1.2rem;
-          line-height: 3rem;
-          letter-spacing: 0.05em;
-        }
-        .location {
-          margin: 40px 0 20px 0;
-          color: var(--sup-text);
-        }
-        .mail {
-          color: var(--sec);
-        }
-      }
     }
   }
 
@@ -399,16 +342,6 @@
         }
       }
     }
-    .contact {
-      .inner {
-        .note {
-          margin-left: 30px;
-        }
-        form {
-          width: 100%;
-        }
-      }
-    }
   }
 }
 
@@ -457,28 +390,16 @@
         }
       }
     }
-    .about-me{
+    .about-me {
       margin-top: 100px;
     }
     .about-me .inner .image {
       width: 100%;
       &::after {
-       
         width: 99%;
       }
     }
-    .contact {
-      .inner {
-        flex-direction: column-reverse;
-        .form {
-          width: 100%;
-        }
-        .note {
-          margin-left: 0;
-          max-width: 100%;
-        }
-      }
-    }
+
     .footer {
       margin-top: 30px;
     }
@@ -500,7 +421,7 @@
         box-shadow: -10px 0px 30px -15px var(--sec);
         li {
           writing-mode: horizontal-tb;
-         
+
           .resume {
             padding: 11px 27px;
           }
@@ -551,7 +472,7 @@
     width: 100%;
     margin-top: 30px;
     justify-content: space-between;
-    span{
+    span {
       padding: 10px;
     }
     &::after {
