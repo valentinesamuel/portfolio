@@ -17,23 +17,5 @@
     </div>
   </div>
 
-  <div class="see-others">
-    <button class="seeArchive" (click)="seeOtherProjects()">
-      {{ seeOthers ? "Hide" : "See" }} Other Projects
-    </button>
-  </div>
-  <div class="other-projects" *ngIf="seeOthers">
-    <h2>Other Projects</h2>
-    <p class="pre">
-      These are other projects that i create to constantly improve my skills.
-      The source codes are available on my github repositories
-    </p>
-    <ul class="other-list" *ngFor="let arcProj of archivedList; let i = index">
-      <li>
-        /{{ i }}
-        <a [href]="arcProj.repo"><span class="src">&lt;src/&gt;</span></a>
-        <span class="name">{{ arcProj.name }}</span>
-      </li>
-    </ul>
-  </div>
+ <app-archive-projects></app-archive-projects>
 </section>

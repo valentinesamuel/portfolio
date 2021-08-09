@@ -9,7 +9,7 @@ import { ArchivedProject, Project } from './project-list.model';
 
 
 export class ProjectsComponent implements OnInit {
-  seeOthers = false;
+  
   projectList: Project[] = [
     {
       name: 'Spotify Clone ',
@@ -30,30 +30,11 @@ export class ProjectsComponent implements OnInit {
       liveDemo: 'project3.com'
     },
   ]
-  archivedList: ArchivedProject[] = [
-    {
-      name: 'yehhh',
-      repo:'yehh.github.com'
-    },
-    {
-      name: 'yewrthe',
-      repo:'yewrthe.github.com'
-    },
-    {
-      name: 'sldfib9mgtfb',
-      repo:'sldfib9mgtfb.github.com'
-    },
-    {
-      name: 'slkdmf',
-      repo:'slkdmf.github.com'
-    }
-  ]
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  seeOtherProjects() {
-    this.seeOthers = !this.seeOthers;
-  }
+  
 }

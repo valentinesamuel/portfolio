@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   contactForm: FormGroup;
   darkTheme = true;
   mobileMenu;
-  company: any = 'freelance';
+ 
   selected
 
   constructor(private sender:OutboxService) { }
@@ -34,10 +34,7 @@ export class HomeComponent implements OnInit {
   }
 
 
-  selectCompany(id: any) {
-    this.company = id;
-    this.selected = !this.selected;
-  }
+  
 
   showMobileMenu() {
     this.mobileMenu = !this.mobileMenu;

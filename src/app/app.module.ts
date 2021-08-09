@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ThemeCheckerComponent } from './theme-checker/theme-checker.component';
 import { SplashComponent } from './splash/splash.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { SplashComponent } from './splash/splash.component';
     ProjectsComponent,
     ThemeCheckerComponent,
     SplashComponent,
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule,
