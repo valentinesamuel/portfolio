@@ -12,6 +12,7 @@ import { ThemeCheckerComponent } from './theme-checker/theme-checker.component';
 import { SplashComponent } from './splash/splash.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ContactComponent } from './contact/contact.component';
     SplashComponent,
     ExperienceComponent,
     ContactComponent,
+    AboutMeComponent,
   ],
   imports: [
     BrowserModule,
