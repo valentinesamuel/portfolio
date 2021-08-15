@@ -19,7 +19,7 @@ export class ContactComponent implements OnInit {
     });
   }
   onSubmit(form) {
-    // this.sender.sendMessage(form)
+    this.sender.sendMessage(form)
   }
   nameErrorAlert() {
     const nameField = this.contactForm.get('name');
