@@ -1,4 +1,16 @@
-@import "../home/home.component.scss";
+@import '../../styles.css';
+.btn {
+  padding: 0.6875rem 1.6875rem;
+  border: 2px solid var(--sec);
+  color: var(--sec);
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  width: max-content;
+  &:hover {
+    background: var(--sec-tint);
+  }
+}
 .inner {
   display: flex;
   justify-content: space-between;
@@ -31,9 +43,19 @@
       margin-bottom: 70px;
       resize: vertical;
     }
+
+    .disabled {
+      @extend .btn;
+      color: var(--grey);
+      border-color: var(--grey);
+      cursor: not-allowed;
+      &:hover{
+        background: none;
+      }
+    }
+
     .submit {
       @extend .btn;
-      width: max-content;
     }
   }
   .note {
