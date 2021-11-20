@@ -7,5 +7,6 @@ export interface Project {
 export interface ArchivedProject{
       name: string;
       repo: string;
+      livePage: string;
       
 }

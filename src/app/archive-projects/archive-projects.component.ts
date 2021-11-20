@@ -11,21 +11,21 @@ export class ArchiveProjectsComponent implements OnInit {
 
   archivedList: ArchivedProject[] = [
     {
-      name: 'yehhh',
-      repo: 'yehh.github.com'
+      name: 'Foodie Landing Pagge',
+      repo: 'https://github.com/valentinesamuel/Foodie-website',
+      livePage: 'https://condes.netlify.app/'
     },
     {
-      name: 'yewrthe',
-      repo: 'yewrthe.github.com'
+      name: 'Zou Farms Landing Page',
+      repo: 'https://github.com/valentinesamuel/Zou-farm-landing-page',
+      livePage: 'https://farmzou.netlify.app/'
     },
     {
-      name: 'sldfib9mgtfb',
-      repo: 'sldfib9mgtfb.github.com'
+      name: 'Archicture Portfolio',
+      repo: 'https://github.com/valentinesamuel/archi-portfolio',
+      livePage: 'https://michvalarchitects.netlify.app/'
     },
-    {
-      name: 'slkdmf',
-      repo: 'slkdmf.github.com'
-    }
+   
   ]
   constructor() { }
 

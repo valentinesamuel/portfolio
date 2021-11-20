@@ -9,11 +9,11 @@ import { ArchivedProject, Project } from './project-list.model';
 
 
 export class ProjectsComponent implements OnInit {
-  
+
   projectList: Project[] = [
     {
       name: 'Spotify Clone ',
-      stack: [ 'Angular', 'Git', 'APIs'],
+      stack: ['Angular', 'Git', 'Spotify API'],
       repo: 'https://github.com/valentinesamuel/music-app',
       liveDemo: 'https://ng-spotify.netlify.app/'
     },
@@ -24,17 +24,23 @@ export class ProjectsComponent implements OnInit {
       liveDemo: 'https://buycoins-github.netlify.app/'
     },
     {
-      name: 'Project ',
-      stack: ['BASH', 'UID'],
-      repo: 'git-sample3.com',
-      liveDemo: 'project3.com'
+      name: 'Joke Generator',
+      stack: ['Javascript', 'APIs'],
+      repo: 'https://github.com/valentinesamuel/jokes-generator',
+      liveDemo: 'https://funny-jokes.netlify.app/'
+    },
+    {
+      name: 'Ghanzu Web App',
+      stack: ['Javascript', 'APIs', 'Firebase'],
+      repo: 'https://github.com/valentinesamuel/ghanzu',
+      liveDemo: 'https://ghanzu.netlify.app/'
     },
   ]
-  
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  
+
 }
