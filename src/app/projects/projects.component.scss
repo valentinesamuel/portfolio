@@ -227,6 +227,10 @@
       .name {
         @extend .src;
         font-size: 1.2rem;
+
+        a{
+          color: var(--sup-text);
+        }
       }
     }
   }

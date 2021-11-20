@@ -13,40 +13,39 @@ export class ProjectsComponent implements OnInit {
   projectList: Project[] = [
     {
       name: 'Spotify Clone ',
-      stack: [ 'Angular', 'Git', 'APIs'],
+      stack: [ 'Angular', 'APIs'],
       repo: 'https://github.com/valentinesamuel/music-app',
       liveDemo: 'https://ng-spotify.netlify.app/'
     },
     {
       name: 'Github Clone',
-      stack: ['Javascript', 'Git', 'APIs'],
+      stack: ['Javascript', 'APIs'],
       repo: 'https://github.com/valentinesamuel/BuyCoins-FE-Application',
       liveDemo: 'https://buycoins-github.netlify.app/'
     },
     {
-      name: 'Project ',
-      stack: ['BASH', 'UID'],
-      repo: 'git-sample3.com',
-      liveDemo: 'project3.com'
+      name: 'Joke Generator',
+      stack: ['Javascript', 'APIs'],
+      repo: 'https://github.com/valentinesamuel/jokes-generator',
+      liveDemo: 'https://funny-jokes.netlify.app/'
     },
   ]
   archivedList: ArchivedProject[] = [
     {
-      name: 'yehhh',
-      repo:'yehh.github.com'
+      name: 'Foodie Landing Page',
+      repo: 'https://github.com/valentinesamuel/Foodie-website',
+      livePage: 'https://condes.netlify.app/',
     },
     {
-      name: 'yewrthe',
-      repo:'yewrthe.github.com'
+      name: 'Ghanzu Web App',
+      repo: 'https://github.com/valentinesamuel/ghanzu',
+      livePage:'https://ghanzu.netlify.app/',
     },
     {
-      name: 'sldfib9mgtfb',
-      repo:'sldfib9mgtfb.github.com'
+      name: 'Zou Farms Landing Page',
+      repo: 'https://github.com/valentinesamuel/Zou-farm-landing-page',
+      livePage:'https://farmzou.netlify.app/',
     },
-    {
-      name: 'slkdmf',
-      repo:'slkdmf.github.com'
-    }
   ]
   constructor() { }
 
