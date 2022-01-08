@@ -21,7 +21,7 @@ export class ArchiveProjectsComponent implements OnInit {
       livePage: 'https://farmzou.netlify.app/'
     },
     {
-      name: 'Archicture Portfolio',
+      name: 'Architecture Portfolio',
       repo: 'https://github.com/valentinesamuel/archi-portfolio',
       livePage: 'https://michvalarchitects.netlify.app/'
     },

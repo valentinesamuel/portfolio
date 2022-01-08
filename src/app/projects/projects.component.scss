@@ -31,6 +31,7 @@
         .stack {
           display: flex;
           margin: 20px 0 20px 0;
+          flex-wrap: wrap;
           span {
             margin-right: 10px;
           }
@@ -75,6 +76,7 @@
         }
       }
       img {
+        visibility: none; /* when i have screenshot for the projects, i will remove this line and the hover state too */
         height: 100%;
         object-fit: cover;
         width: 40%;
@@ -108,7 +110,7 @@
         img {
           top: 0;
           left: -10%;
-          visibility: visible;
+          visibility: none; /* when i have screenshot for the projects, i will change this visibility to visible*/
         }
       }
     }
