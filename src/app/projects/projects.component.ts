@@ -24,6 +24,12 @@ export class ProjectsComponent implements OnInit {
       liveDemo: 'https://buycoins-github.netlify.app/'
     },
     {
+      name: 'Color Palette Generator',
+      stack: ['React', 'Colormind API'],
+      repo: 'https://github.com/valentinesamuel/color-palette-generator',
+      liveDemo: 'https://random-palette-maker.netlify.app/'
+    },
+    {
       name: 'Joke Generator',
       stack: ['Javascript', 'APIs'],
       repo: 'https://github.com/valentinesamuel/jokes-generator',
