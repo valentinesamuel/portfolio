@@ -35,12 +35,7 @@ export class ProjectsComponent implements OnInit {
       repo: 'https://github.com/valentinesamuel/jokes-generator',
       liveDemo: 'https://funny-jokes.netlify.app/'
     },
-    {
-      name: 'Ghanzu Web App',
-      stack: ['Javascript', 'APIs', 'Firebase'],
-      repo: 'https://github.com/valentinesamuel/ghanzu',
-      liveDemo: 'https://ghanzu.netlify.app/'
-    },
+   
   ]
 
   constructor() { }
