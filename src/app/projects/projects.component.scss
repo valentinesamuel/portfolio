@@ -13,7 +13,6 @@
       min-width: 50%;
       display: flex;
       align-items: center;
-      transition: 1s;
       .sn {
         display: flex;
         align-items: center;
@@ -27,7 +26,7 @@
         }
       }
       .details {
-        margin-left: 20%;
+        margin-left: 15%;
         .stack {
           display: flex;
           margin: 20px 0 20px 0;
@@ -97,8 +96,7 @@
           }
         }
         .details {
-          h3,
-          p {
+          h3 {
             font-size: 20px;
           }
         }
@@ -132,6 +130,7 @@
     .project {
       padding: 10px 10px 10px 0;
       .left {
+        min-width: 60%;
         .sn {
           &:before {
             content: "";
@@ -147,7 +146,7 @@
       .right {
         justify-content: center;
         width: 100%;
-        min-width: max-content;
+        min-width: 10%;
         flex-direction: column;
         img {
           display: none;

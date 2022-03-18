@@ -1,90 +1,106 @@
-  <div class="inner">
-        <ul>
-          <li
-            class="list"
-            (click)="selectCompany('freelance')"
-            [ngClass]="company == 'freelance' ? 'activeTile' : ''"
-          >
-            Freelance
-          </li>
-          <li
-            class="list"
-            (click)="selectCompany('3d')"
-            [ngClass]="company == '3d' ? 'activeTile' : ''"
-          >
-            Kingswill Int. Service
-          </li>
-          <li
-            class="list"
-            (click)="selectCompany('intern')"
-            [ngClass]="company == 'intern' ? 'activeTile' : ''"
-          >
-            Kingswill Int. Service
-          </li>
-        </ul>
+<div class="inner">
+  <ul>
+    <li
+      class="list"
+      (click)="selectCompany('ohmswich')"
+      [ngClass]="company == 'ohmswich' ? 'activeTile' : ''"
+    >
+      Ohmswich
+    </li>
+    <li
+      class="list"
+      (click)="selectCompany('freelance')"
+      [ngClass]="company == 'freelance' ? 'activeTile' : ''"
+    >
+      Freelance
+    </li>
+    <li
+      class="list"
+      (click)="selectCompany('3d')"
+      [ngClass]="company == '3d' ? 'activeTile' : ''"
+    >
+      Kingswill Int. Service
+    </li>
+    <li
+      class="list"
+      (click)="selectCompany('intern')"
+      [ngClass]="company == 'intern' ? 'activeTile' : ''"
+    >
+      Kingswill Int. Service
+    </li>
+  </ul>
 
-        <div class="content">
-          <div class="value" *ngIf="company == 'freelance'">
-            <h2>
-              <span class="colored-text">Freelance</span> Frontend Engineer
-            </h2>
-            <p class="duration">March 2020 - Present</p>
-            <ul>
-              <li>
-                Managed full-cycle design tasks, handling all phases from
-                conception to completion while maintaining guidelines
-                throughout.
-              </li>
-              <li>
-                Conducted testing and review of website design for
-                responsiveness, clarity and effectiveness.
-              </li>
-              <li>
-                Engineered and maintained high quality web-apps using Angular.
-              </li>
-              <li>Designed User Interfaces for web-aps in Figma.</li>
-            </ul>
-          </div>
-          <div class="value" *ngIf="company == '3d'">
-            <h2>
-              <span class="colored-text">3D</span> Architectural Visualizer
-              <span class="firm">Kingswill Int. Services</span>
-            </h2>
-            <p class="duration">September 2019 - October 2020</p>
-            <ul>
-              <li>
-                Exceeded goals through effective task prioritization and great
-                work ethic.
-              </li>
-              <li>
-                Developed primary models and sketches to showcase final product
-                designs.
-              </li>
-              <li>
-                Trained 42 incoming designers on proper use of 3d rendering
-                software, including Sketchup, Revit, Twinmotion and Enscape.
-              </li>
-            </ul>
-          </div>
-          <div class="value" *ngIf="company == 'intern'">
-            <h2>
-              <span class="colored-text">Architectural</span> Intern
-              <span class="firm">Kingswill Int. Services</span>
-            </h2>
-            <p class="duration">September 2016 - August 2019</p>
-            <ul>
-              <li>
-                Improved the quality of construction drawings by 40% by
-                producing detailed drawing sheets.
-              </li>
-              <li>
-                Oversaw completion of over 150 architectural design projects,
-                successfully meeting all key milestones.
-              </li>
-              <li>
-                Created, printed and modified drawings in AutoCAD and Revit.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+  <div class="content">
+    <div class="value" *ngIf="company == 'ohmswich'">
+      <h2>
+        <span class="colored-text">Ohmswich</span> Mid-Senior Web Developer
+        (Intern)
+      </h2>
+      <p class="duration">March 2022 - Present</p>
+      <ul>
+        <li>
+          Collaborate with Colleagues to suggest new solutions to improve
+          existing designs.
+        </li>
+        <li>Consistently create well-designed tested codes using industry best practices for website development (mobile and static devices) site design.</li>
+        <li>Manage the Company’s intranet sites and associated services.</li>
+        <li>Designed User Interfaces for web-apps in Figma.</li>
+      </ul>
+    </div>
+    <div class="value" *ngIf="company == 'freelance'">
+      <h2><span class="colored-text">Freelance</span> Frontend Engineer</h2>
+      <p class="duration">March 2020 - Present</p>
+      <ul>
+        <li>
+          Managed full-cycle design tasks, handling all phases from conception
+          to completion while maintaining guidelines throughout.
+        </li>
+        <li>
+          Conducted testing and review of website design for responsiveness,
+          clarity and effectiveness.
+        </li>
+        <li>Engineered and maintained high quality web-apps using Angular.</li>
+        <li>Designed User Interfaces for web-apps in Figma.</li>
+      </ul>
+    </div>
+    <div class="value" *ngIf="company == '3d'">
+      <h2>
+        <span class="colored-text">3D</span> Architectural Visualizer
+        <span class="firm">Kingswill Int. Services</span>
+      </h2>
+      <p class="duration">September 2019 - October 2020</p>
+      <ul>
+        <li>
+          Exceeded goals through effective task prioritization and great work
+          ethic.
+        </li>
+        <li>
+          Developed primary models and sketches to showcase final product
+          designs.
+        </li>
+        <li>
+          Trained 42 incoming designers on proper use of 3d rendering software,
+          including Sketchup, Revit, Twinmotion and Enscape.
+        </li>
+      </ul>
+    </div>
+    <div class="value" *ngIf="company == 'intern'">
+      <h2>
+        <span class="colored-text">Architectural</span> Intern
+        <span class="firm">Kingswill Int. Services</span>
+      </h2>
+      <p class="duration">September 2016 - August 2019</p>
+      <ul>
+        <li>
+          Improved the quality of construction drawings by 40% by producing
+          detailed drawing sheets.
+        </li>
+        <li>
+          Oversaw completion of over 150 architectural design projects,
+          successfully meeting all key milestones.
+        </li>
+        <li>Created, printed and modified drawings in AutoCAD and Revit.</li>
+      </ul>
+    </div>
+  </div>
+</div>
