@@ -11,9 +11,9 @@ export class AppComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    setTimeout(() => {
-      this.splash = !this.splash;
-      this.router.navigate(['/home'])
-    }, 4000);
+    // setTimeout(() => {
+    //   this.splash = !this.splash;
+    // }, 4000);
+    // this.router.navigate([''])
   }
 }
