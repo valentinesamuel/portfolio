@@ -18,6 +18,12 @@ export class ProjectsComponent implements OnInit {
       liveDemo: 'https://ng-spotify.netlify.app/'
     },
     {
+      name: 'Crown Clothiers',
+      stack: ['React', 'Firebase', 'React-Redux'],
+      repo: 'https://github.com/valentinesamuel/crown-clothiers',
+      liveDemo: 'https://crown-clothiers.netlify.app/'
+    },
+    {
       name: 'Github Clone',
       stack: ['Javascript', 'Git', 'APIs'],
       repo: 'https://github.com/valentinesamuel/BuyCoins-FE-Application',
@@ -30,10 +36,10 @@ export class ProjectsComponent implements OnInit {
       liveDemo: 'https://random-palette-maker.netlify.app/'
     },
     {
-      name: 'Joke Generator',
-      stack: ['Javascript', 'APIs'],
-      repo: 'https://github.com/valentinesamuel/jokes-generator',
-      liveDemo: 'https://funny-jokes.netlify.app/'
+      name: 'Blog Webapp',
+      stack: ['React', 'Sanity'],
+      repo: 'https://github.com/valentinesamuel/sanity-blog-test',
+      liveDemo: 'https://sanitious-blog.netlify.app/'
     },
    
   ]
