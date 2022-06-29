@@ -18,10 +18,16 @@ export class ProjectsComponent implements OnInit {
       liveDemo: 'https://ng-spotify.netlify.app/'
     },
     {
-      name: 'Crown Clothiers',
+      name: 'Skin Clothiers',
       stack: ['React', 'Firebase', 'React-Redux'],
       repo: 'https://github.com/valentinesamuel/crown-clothiers',
-      liveDemo: 'https://crown-clothiers.netlify.app/'
+      liveDemo: 'https://skin-clothiers.netlify.app/'
+    },
+    {
+      name: 'Blog Webapp',
+      stack: ['React', 'Sanity'],
+      repo: 'https://github.com/valentinesamuel/sanity-blog-test',
+      liveDemo: 'https://sanitious-blog.netlify.app/'
     },
     {
       name: 'Github Clone',
@@ -34,12 +40,6 @@ export class ProjectsComponent implements OnInit {
       stack: ['React', 'Colormind API'],
       repo: 'https://github.com/valentinesamuel/color-palette-generator',
       liveDemo: 'https://random-palette-maker.netlify.app/'
-    },
-    {
-      name: 'Blog Webapp',
-      stack: ['React', 'Sanity'],
-      repo: 'https://github.com/valentinesamuel/sanity-blog-test',
-      liveDemo: 'https://sanitious-blog.netlify.app/'
     },
    
   ]
