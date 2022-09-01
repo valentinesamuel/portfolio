@@ -33,7 +33,7 @@ export class ArchiveProjectsComponent implements OnInit {
     {
       name: 'Color Palette Generator',
       repo: 'https://github.com/valentinesamuel/color-palette-generator',
-      liveDemo: 'https://random-palette-maker.netlify.app/'
+      livePage: 'https://random-palette-maker.netlify.app/'
     },
     {
       name: 'Ghanzu Web App',
