@@ -12,16 +12,22 @@ export class ProjectsComponent implements OnInit {
 
   projectList: Project[] = [
     {
-      name: 'Spotify Clone ',
-      stack: ['Angular', 'Git', 'Spotify API'],
-      repo: 'https://github.com/valentinesamuel/music-app',
-      liveDemo: 'https://ng-spotify.netlify.app/'
+      name: 'Feems',
+      stack: ['React', 'Typescript', 'Redux-Toolkit', 'Firebase', 'Firestore'],
+      repo: 'https://github.com/valentinesamuel/redux-movie-app',
+      liveDemo: 'https://feemflix.netlify.app/'
     },
     {
       name: 'Skin Clothiers',
       stack: ['React', 'Firebase', 'React-Redux'],
       repo: 'https://github.com/valentinesamuel/crown-clothiers',
       liveDemo: 'https://skin-clothiers.netlify.app/'
+    },
+    {
+      name: 'Spotify Clone ',
+      stack: ['Angular', 'Git', 'Spotify API'],
+      repo: 'https://github.com/valentinesamuel/music-app',
+      liveDemo: 'https://ng-spotify.netlify.app/'
     },
     {
       name: 'Blog Webapp',
@@ -34,14 +40,8 @@ export class ProjectsComponent implements OnInit {
       stack: ['Javascript', 'Git', 'APIs'],
       repo: 'https://github.com/valentinesamuel/BuyCoins-FE-Application',
       liveDemo: 'https://buycoins-github.netlify.app/'
-    },
-    {
-      name: 'Color Palette Generator',
-      stack: ['React', 'Colormind API'],
-      repo: 'https://github.com/valentinesamuel/color-palette-generator',
-      liveDemo: 'https://random-palette-maker.netlify.app/'
-    },
-   
+    }
+
   ]
 
   constructor() { }

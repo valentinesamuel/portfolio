@@ -10,20 +10,15 @@ export class ArchiveProjectsComponent implements OnInit {
   seeOthers = false;
 
   archivedList: ArchivedProject[] = [
+     {
+      name: 'Movie Search App',
+      repo: 'https://github.com/valentinesamuel/mytest-app',
+      livePage: 'http://mytest-app.vercel.app/'
+    },
     {
       name: 'Testimonial App',
       repo: 'https://github.com/valentinesamuel/vasiti-web-application',
       livePage: 'http://vasiti-web-application.vercel.app/'
-    },
-    {
-      name: 'Ghanzu Web App',
-      repo: 'https://github.com/valentinesamuel/ghanzu',
-      livePage: 'https://ghanzu.netlify.app/'
-    },
-    {
-      name: 'Foodie Landing Pagge',
-      repo: 'https://github.com/valentinesamuel/Foodie-website',
-      livePage: 'https://condes.netlify.app/'
     },
     {
       name: 'Zou Farms Landing Page',
@@ -31,15 +26,31 @@ export class ArchiveProjectsComponent implements OnInit {
       livePage: 'https://farmzou.netlify.app/'
     },
     {
+      name: 'EHR Health Service',
+      repo: 'https://lawpavillion-ehr.vercel.app/auth',
+      livePage: 'https://github.com/valentinesamuel/lawpavillion-ehr'
+    },
+    {
+      name: 'Color Palette Generator',
+      repo: 'https://github.com/valentinesamuel/color-palette-generator',
+      liveDemo: 'https://random-palette-maker.netlify.app/'
+    },
+    {
+      name: 'Ghanzu Web App',
+      repo: 'https://github.com/valentinesamuel/ghanzu',
+      livePage: 'https://ghanzu.netlify.app/'
+    },
+    {
       name: 'Architecture Portfolio',
       repo: 'https://github.com/valentinesamuel/archi-portfolio',
       livePage: 'https://michvalarchitects.netlify.app/'
     },
     {
-      name: 'Movie Search App',
-      repo: 'https://github.com/valentinesamuel/mytest-app',
-      livePage: 'http://mytest-app.vercel.app/'
+      name: 'Foodie Landing Pagge',
+      repo: 'https://github.com/valentinesamuel/Foodie-website',
+      livePage: 'https://condes.netlify.app/'
     },
+   
 
   ]
   constructor() { }
