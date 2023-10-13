@@ -1,66 +1,57 @@
 <div class="inner">
   <ul>
-    <li
-      class="list"
-      (click)="selectCompany('ohmswich')"
-      [ngClass]="company == 'ohmswich' ? 'activeTile' : ''"
-    >
+    <li class="list" (click)="selectCompany('ohmswich')" [ngClass]="company == 'ohmswich' ? 'activeTile' : ''">
       Ohmswich
     </li>
-    <li
-      class="list"
-      (click)="selectCompany('freelance')"
-      [ngClass]="company == 'freelance' ? 'activeTile' : ''"
-    >
+    <li class="list" (click)="selectCompany('freelance')" [ngClass]="company == 'freelance' ? 'activeTile' : ''">
       Freelance
     </li>
-    <li
-      class="list"
-      (click)="selectCompany('3d')"
-      [ngClass]="company == '3d' ? 'activeTile' : ''"
-    >
+    <li class="list" (click)="selectCompany('3d')" [ngClass]="company == '3d' ? 'activeTile' : ''">
       Kingswill Int. Service
     </li>
-    <li
-      class="list"
-      (click)="selectCompany('intern')"
-      [ngClass]="company == 'intern' ? 'activeTile' : ''"
-    >
+    <li class="list" (click)="selectCompany('intern')" [ngClass]="company == 'intern' ? 'activeTile' : ''">
       Kingswill Int. Service
     </li>
   </ul>
 
   <div class="content">
+    <div class="value" *ngIf="company == 'freelance'">
+      <h2><span class="colored-text">Freelance</span>Software Engineer</h2>
+      <p class="duration">March 2019 - Present</p>
+      <ul>
+        <li>
+          Deployed and managed 10+ containerized web applications on AWS EC2 instances, reducing hosting costs by 23%.
+        </li>
+        <li>
+          Developed highly efficient backend services handling 500+ requests per minute and reducing response times by
+          40%.
+        </li>
+        <li>Achieved a 70% improvement in data quality through optimized database schema design. </li>
+        <li>Successfully managed and delivered 10+ end-to-end design tasks, consistently meeting project guidelines and
+          deadlines.</li>
+        <li>Developed 10+ high-performance web applications, achieving a 20% increase in page load speed and user
+          engagement.</li>
+        <li>Integrated APIs into 15 frontend projects, enhancing data accessibility and real-time updates, resulting in
+          a 30% increase in user interaction.</li>
+      </ul>
+    </div>
     <div class="value" *ngIf="company == 'ohmswich'">
       <h2>
         <span class="colored-text">Ohmswich</span> Mid-Senior Web Developer
         (Intern)
       </h2>
-      <p class="duration">March 2022 - Present</p>
+      <p class="duration">March 2022 - June 2022</p>
       <ul>
         <li>
-          Collaborate with Colleagues to suggest new solutions to improve
-          existing designs.
-        </li>
-        <li>Consistently create well-designed tested codes using industry best practices for website development (mobile and static devices) site design.</li>
-        <li>Manage the Company’s intranet sites and associated services.</li>
-        <li>Designed User Interfaces for web-apps in Figma.</li>
-      </ul>
-    </div>
-    <div class="value" *ngIf="company == 'freelance'">
-      <h2><span class="colored-text">Freelance</span> Frontend Engineer</h2>
-      <p class="duration">March 2020 - Present</p>
-      <ul>
-        <li>
-          Managed full-cycle design tasks, handling all phases from conception
-          to completion while maintaining guidelines throughout.
+          Improved designs, leading to a 20% increase in user satisfaction and a 15% decrease in bounce rates.
         </li>
         <li>
-          Conducted testing and review of website design for responsiveness,
-          clarity and effectiveness.
+          Enhanced intranet site performance, reducing downtime by 25% and increasing site speed by 10%.
         </li>
-        <li>Engineered and maintained high quality web-apps using Angular.</li>
-        <li>Designed User Interfaces for web-apps in Figma.</li>
+        <li>
+          Designed User Interfaces in Figma, resulting in a 30% improvement in user experience and a 15% decrease in
+          support requests.
+        </li>
       </ul>
     </div>
     <div class="value" *ngIf="company == '3d'">
@@ -68,20 +59,28 @@
         <span class="colored-text">3D</span> Architectural Visualizer
         <span class="firm">Kingswill Int. Services</span>
       </h2>
-      <p class="duration">September 2019 - October 2020</p>
+      <p class="duration">September 2018 - October 2019</p>
       <ul>
         <li>
-          Exceeded goals through effective task prioritization and great work
-          ethic.
+          Exceeded goals by effectively prioritizing tasks, achieving a 15% increase in project completion rates.
         </li>
         <li>
-          Developed primary models and sketches to showcase final product
-          designs.
+          Used Enscape to create realistic textures for graphics and 3D animations.
         </li>
         <li>
-          Trained 42 incoming designers on proper use of 3d rendering software,
-          including Sketchup, Revit, Twinmotion and Enscape.
+          Developed primary models and sketches to showcase final product designs.
         </li>
+        <li>
+          Elevated 3D rendering quality by 60%, enhancing client satisfaction.
+        </li>
+        <li>
+          Used AutoCAD, Sketchup and Enscape to draw, render and present models to clients and teams.
+        </li>
+        <li>
+          Mentored 42 incoming designers on the use of 3d rendering software, including Sketchup, Revit, Twinmotion and
+          Enscape.
+        </li>
+        <li>Synchronized animations for sound testing and effectiveness.</li>
       </ul>
     </div>
     <div class="value" *ngIf="company == 'intern'">
@@ -89,15 +88,17 @@
         <span class="colored-text">Architectural</span> Intern
         <span class="firm">Kingswill Int. Services</span>
       </h2>
-      <p class="duration">September 2016 - August 2019</p>
+      <p class="duration">September 2016 - August 2018</p>
       <ul>
         <li>
-          Improved the quality of construction drawings by 40% by producing
-          detailed drawing sheets.
+          Improved the quality of construction drawings by 40% by detailing drawing sheets.
         </li>
         <li>
-          Oversaw completion of over 150 architectural design projects,
-          successfully meeting all key milestones.
+          Increased project efficiency by 70% by meeting with architects, customers and vendors regarding project scope.
+        </li>
+        <li>Provided drafting support to civil engineering staff.</li>
+        <li>
+          Oversaw completion of over 150 architectural design projects, successfully meeting all key milestones.
         </li>
         <li>Created, printed and modified drawings in AutoCAD and Revit.</li>
       </ul>
