@@ -1,13 +1,13 @@
 +++
 title = 'About Me'
-date = 2024-04-01T13:37:27-04:00
+date = 2024-05-01T13:37:27-04:00
 draft = false
 keywords = ['valentine samuel', 'software engineer', 'software engineering blog', 'software engineer', 'senior software engineer', 'fullstack engineer', 'frontend engineer', 'backend engineer']
 +++
 
-{{< button href="../Valentine_Samuel_Resume.pdf" target="_self" >}}
+<!-- {{< button href="../Valentine_Samuel_Resume.pdf" target="_self" >}}
 Download Resume
-{{< /button >}}
+{{< /button >}} -->
 
 ## About Me
 

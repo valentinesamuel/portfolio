@@ -26,6 +26,11 @@
   weight = 20
 
 [[main]]
+  name = "Experience"
+  pageRef = "experience"
+  weight = 20
+
+[[main]]
   identifier = "search"
   weight = 99
   [main.params]
