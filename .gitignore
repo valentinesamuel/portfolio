@@ -1,0 +1,16 @@
+.DS_Store
+
+# hugo generated
+/public/
+/resources/
+.hugo_build.lock
+Thumbs.db
+.DS_Store
+.dist
+.tmp
+.sass-cache
+npm-debug.log
+node_modules
+builds
+package-lock.json
+ 
