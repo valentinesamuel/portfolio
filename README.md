@@ -1,7 +1,7 @@
-# Static website - https://kylecapehart.com
+<!-- # Static website - https://kylecapehart.com
 - personal portfolio and blog posts
 - built with Hugo: https://gohugo.io/
-- uses Congo theme: https://github.com/jpanther/congo
+- uses Congo theme: https://github.com/jpanther/congo -->
 
 ## Local Development
 - install hugo: https://gohugo.io/installation/
