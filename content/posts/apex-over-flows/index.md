@@ -1,7 +1,7 @@
 +++
 title = 'Why you should use Apex instead of Flows in Salesforce'
 date = 2024-03-12T12:34:07-04:00
-draft = false
+draft = true
 categories = ['salesforce', 'apex', 'flows']
 keywords = ['kyle capehart', 'salesforce', 'apex', 'apex class', 'apex trigger', 'flows', 'record triggered flow', 'lightning flow', 'declarative', 'programmatic', 'apex vs flows', 'triggers vs flows', 'salesforce flow tests', 'testing flows with apex', 'salesforce version control', 'declarative tests', 'Should I use flows or apex', 'how to test flows', 'asynchronous with flow', 'batch process in flows or apex trigger']
 +++

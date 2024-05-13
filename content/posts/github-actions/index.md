@@ -1,7 +1,7 @@
 +++
 title = 'Automate your Salesforce Deployments with GitHub Actions'
 date = 2024-04-02T10:38:35-04:00
-draft = false
+draft = true
 categories = ['salesforce', 'dev-ops']
 keywords = ['kyle capehart', 'salesforce', 'sf', 'sfdc', 'dev-ops', 'dev ops', 'github actions', 'automating salesforce release', 'yaml', 'gh actions', 'salesforce pipeline', 'sf release', 'salesforce cli', 'sfdx', 'ci/cd', 'ci/cd in salesforce', 'ci cd salesforce', 'sf project deploy', 'sfdx authorization url', 'sf org login', 'sf org login sfdx-url', 'sf org login sfdx-url --sfdx-url-stdin', 'sf org login sfdx-url -u', 'salesforce authorization for ci', 'pipe sfdx authorization url', 'securely login salesforce', 'sf org display --verbose', 'devops center', 'change sets', 'ant migration tool retirement', 'ant migration end of life', 'automatically deploy salesforce from github', 'automate salesforce deployment with command line', 'automate salesforce deployment with sf cli', 'sfdx cli retirement']
 +++

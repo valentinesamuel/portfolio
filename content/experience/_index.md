@@ -36,7 +36,7 @@ Download Resume
   + Deployed and managed containerized web applications on AWS EC2 instances, optimising hosting costs effectively.
   + Developed highly efficient backend services capable of handling requests and improving response times significantly.
   + Achieved notable improvement in data quality through strategic optimization of database schema design.
-- **March 2019 -- July 2023**
+- **March 2019 -- October 2021**
   <br>
   _@Ohmswich, United Kingdom._
   <br>
