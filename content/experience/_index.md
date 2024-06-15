@@ -10,47 +10,46 @@ Download Resume
 
 <br>
 
-
 ## Experience
 
 - **February 2024 -- Present**
   <br>
   _@Ab-InBev, Belgium._
   <br>
-  _**Backend Engineer**_ 
-  + Responsible for developing and maintaining the backend services for the company's ERP platform.
-   + Worked on the improving security of the company's ERP.
+  _**Backend Engineer**_
+  - Responsible for maintaining the company's microservices.
+  - Worked on the improving security of the company's backend.
+  - Developed a new feature that improved the business workflow by 30%.
+  - Improved performance of the company's backend by 20%.
 - **July 2023 -- Present**
   <br>
   _@Aquatrack Inc, Nigeria._
   <br>
-  _**Software Engineer**_ 
-  + Led the development of an advanced fish farm management tool, leveraging NextJs, NestJS, Node.js, Docker, SQL, TypeORM, and Postman.
-  + Optimised backend using NestJS and Node.js, and streamlined deployment with Docker for a responsive fish farm management system.
-  + Rectified data redundancy through proper design of database schema.
+  _**Software Engineer**_
+  - Led the development of an advanced fish farm management tool, leveraging NextJs, NestJS, Node.js, Docker, SQL, TypeORM, and Postman.
+  - Optimised backend using NestJS and Node.js, and streamlined deployment with Docker for a responsive fish farm management system.
+  - Rectified data redundancy through proper design of database schema.
 - **March 2022 -- July 2022**
   <br>
   _@Freelance, Nigeria._
   <br>
-  _**Software Engineer**_ 
-  + Deployed and managed containerized web applications on AWS EC2 instances, optimising hosting costs effectively.
-  + Developed highly efficient backend services capable of handling requests and improving response times significantly.
-  + Achieved notable improvement in data quality through strategic optimization of database schema design.
+  _**Software Engineer**_
+  - Deployed and managed containerized web applications on AWS EC2 instances, optimising hosting costs effectively.
+  - Developed highly efficient backend services capable of handling requests and improving response times significantly.
+  - Achieved notable improvement in data quality through strategic optimization of database schema design.
 - **March 2019 -- October 2021**
   <br>
   _@Ohmswich, United Kingdom._
   <br>
-  _**Software Engineer**_ 
-  + Improved designs, leading to a 20% increase in user satisfaction and a 15% decrease in bounce rates. 
-  + Enhanced intranet site performance, reducing downtime by 25% and increasing site speed by 10%.
-  + Designed User Interfaces in Figma, resulting in a 30% improvement in user experience and a 15% decrease in support requests.
-
+  _**Software Engineer**_
+  - Improved designs, leading to a 20% increase in user satisfaction and a 15% decrease in bounce rates.
+  - Enhanced intranet site performance, reducing downtime by 25% and increasing site speed by 10%.
+  - Designed User Interfaces in Figma, resulting in a 30% improvement in user experience and a 15% decrease in support requests.
 
 ## Education
 
 - **Diploma in Software Engineering** -- ALX Africa, Kenya.
 - **B.URP in Urban and Regional Planning** -- University of Uyo, Nigeria.
-
 
 ## Technical & Soft skills
 
@@ -70,7 +69,6 @@ Download Resume
 - **Terminal:** Shell, Bash, Hyper, Powershell
 - **Education:** Scrimba, Coursera, Datacamp, Freecodecamp, Udacity, Udemy
 - **Productivity:** Notion, Trello, Jira, Confluence
-
 
 ## Languages
 
