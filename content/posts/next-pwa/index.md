@@ -30,7 +30,6 @@ PWAs offer several advantages:
 - **Enhanced Engagement:** Features like push notifications and home screen installation boost user interaction.
 - **Cross-Platform:** Works on any device with a web browser.
 
-> When i was implementing this is my own application(hospital management system), I did not provide for offline capabilities because the application is very dynamic.
 
 ## Prerequisites
 
