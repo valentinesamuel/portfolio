@@ -17,18 +17,21 @@ Download Resume
   _@Ab-InBev, Belgium._
   <br>
   _**Backend Engineer**_
-  - Responsible for maintaining the company's microservices.
+  - Responsible for developing and maintaining the company's microservices.
   - Worked on the improving security of the company's backend.
   - Developed a new feature that improved the business workflow by 30%.
   - Improved performance of the company's backend by 20%.
+  - Designed and built microservices using Node and Express(NestJs)
+  - Designed normalized database schema to improve data integrity and performance
 - **July 2023 -- Present**
   <br>
   _@Aquatrack Inc, Nigeria._
   <br>
   _**Software Engineer**_
-  - Led the development of an advanced fish farm management tool, leveraging NextJs, NestJS, Node.js, Docker, SQL, TypeORM, and Postman.
-  - Optimised backend using NestJS and Node.js, and streamlined deployment with Docker for a responsive fish farm management system.
-  - Rectified data redundancy through proper design of database schema.
+  - Backend development of an advanced fish farm management tool.
+  - Optimised the backend by 60% using NestJS, Node.js, and streamlined deployment with Docker.
+  - Improved data integrity by 70% through proper design of database schema.
+  - Designed and implemented  CI/CD pipeline on Github
 - **March 2022 -- July 2022**
   <br>
   _@Freelance, Nigeria._
